@@ -38,6 +38,10 @@
   --radius:18px;
   --radius-sm:10px;
   --header-h:78px;
+
+  /* -- motion: smooth, premium easing used across the page -- */
+  --ease-smooth:cubic-bezier(0.16, 1, 0.3, 1);   /* gentle glide, no overshoot */
+  --ease-soft:cubic-bezier(0.22, 1, 0.36, 1);    /* slightly quicker settle    */
 }
 
 /* ============================================================
@@ -92,15 +96,15 @@ p{color:rgba(27,16,36,0.78);}
   gap:8px;
   cursor:pointer;
   border:1.5px solid transparent;
-  transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+  transition:transform .4s var(--ease-smooth), box-shadow .4s var(--ease-smooth), background .3s ease, color .3s ease;
   white-space:nowrap;
 }
 .btn-solid{background:var(--purple-700);color:#fff;box-shadow:0 8px 20px -8px rgba(91,26,139,0.6);}
-.btn-solid:hover{background:var(--purple-900);transform:translateY(-2px);box-shadow:0 12px 24px -8px rgba(91,26,139,0.7);}
+.btn-solid:hover{background:var(--purple-900);transform:translateY(-3px);box-shadow:0 14px 26px -10px rgba(91,26,139,0.7);}
 .btn-outline{border-color:var(--line);color:var(--purple-900);background:#fff;}
-.btn-outline:hover{border-color:var(--purple-700);transform:translateY(-2px);}
+.btn-outline:hover{border-color:var(--purple-700);transform:translateY(-3px);}
 .btn-gold{background:var(--gold-500);color:var(--purple-900);box-shadow:0 8px 20px -8px rgba(232,162,61,0.65);}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 24px -8px rgba(232,162,61,0.75);}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 26px -10px rgba(232,162,61,0.75);}
 
 /* ============================================================
    HEADER / NAV
@@ -112,7 +116,7 @@ header{
   background:rgba(251,248,245,0.7);
   backdrop-filter:blur(14px);
   border-bottom:1px solid transparent;
-  transition:border-color .3s ease, background .3s ease;
+  transition:border-color .4s var(--ease-smooth), background .4s var(--ease-smooth);
 }
 header.scrolled{border-color:var(--line);background:rgba(251,248,245,0.92);}
 .nav-row{display:flex;align-items:center;justify-content:space-between;width:100%;}
@@ -129,7 +133,7 @@ header.scrolled{border-color:var(--line);background:rgba(251,248,245,0.92);}
 
 nav.main-nav{display:flex;align-items:center;gap:34px;}
 nav.main-nav a{font-size:14.5px;font-weight:500;color:var(--ink-900);position:relative;padding:6px 0;}
-nav.main-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold-500);transition:width .25s ease;}
+nav.main-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold-500);transition:width .35s var(--ease-smooth);}
 nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
 .nav-actions{display:flex;align-items:center;gap:14px;}
 .menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
@@ -142,8 +146,8 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
     flex-direction:column;align-items:flex-start;gap:0;
     padding:8px 28px 18px;
     border-bottom:1px solid var(--line);
-    transform:translateY(-8px);opacity:0;visibility:hidden;
-    transition:opacity .25s ease, transform .25s ease, visibility .25s;
+    transform:translateY(-10px);opacity:0;visibility:hidden;
+    transition:opacity .35s var(--ease-smooth), transform .35s var(--ease-smooth), visibility .35s;
   }
   nav.main-nav.open{transform:translateY(0);opacity:1;visibility:visible;}
   nav.main-nav a{padding:12px 0;width:100%;border-bottom:1px solid var(--line);}
@@ -173,36 +177,37 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
 .stat span{font-family:var(--font-mono);font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(27,16,36,0.55);margin-top:2px;}
 
 /* signature: woven thread illustration */
-.weave-wrap{position:relative;aspect-ratio:1/1;max-width:480px;margin:0 auto;}
+.weave-wrap{position:relative;aspect-ratio:1/1;max-width:480px;margin:0 auto;animation:weaveBreathe 7s ease-in-out 3s infinite;transform-origin:center;}
+@keyframes weaveBreathe{0%,100%{transform:scale(1);}50%{transform:scale(1.012);}}
 .weave-wrap svg{width:100%;height:100%;}
 .thread{fill:none;stroke-linecap:round;}
 .thread.gold{stroke:var(--gold-500);stroke-width:2.5;}
 .thread.purple{stroke:var(--violet-400);stroke-width:2.5;}
 .thread.deep{stroke:var(--purple-700);stroke-width:2.5;}
-.ring-path{stroke-dasharray:943;stroke-dashoffset:943;animation:draw 1.9s ease forwards;opacity:.9;}
+.ring-path{stroke-dasharray:943;stroke-dashoffset:943;animation:draw 2.1s var(--ease-smooth) forwards;opacity:.9;}
 .ring-path:nth-of-type(1){animation-delay:0s;}
-.ring-path:nth-of-type(2){animation-delay:.25s;}
-.ring-path:nth-of-type(3){animation-delay:.5s;}
+.ring-path:nth-of-type(2){animation-delay:.18s;}
+.ring-path:nth-of-type(3){animation-delay:.36s;}
 @keyframes draw{to{stroke-dashoffset:0;}}
-.weave-path{stroke-dasharray:4 7;opacity:0;animation:tickIn .8s ease forwards;animation-delay:1.4s;}
+.weave-path{stroke-dasharray:4 7;opacity:0;animation:tickIn 1s var(--ease-smooth) forwards;animation-delay:1.5s;}
 @keyframes tickIn{to{opacity:1;}}
-.node{fill:var(--purple-900);opacity:0;animation:nodeIn .6s ease forwards;}
+.node{fill:var(--purple-900);opacity:0;animation:nodeIn .7s var(--ease-smooth) forwards;}
 @keyframes nodeIn{to{opacity:1;}}
-.node-pulse{animation:nodeIn .6s ease forwards, pulse 2.8s ease-in-out 1.6s infinite;transform-origin:center;}
-@keyframes pulse{0%,100%{r:4.5;opacity:.9;}50%{r:6.5;opacity:.4;}}
+.node-pulse{animation:nodeIn .7s var(--ease-smooth) forwards, pulse 3.2s ease-in-out 1.7s infinite;transform-origin:center;}
+@keyframes pulse{0%,100%{r:4.5;opacity:.9;}50%{r:6.5;opacity:.35;}}
 
 /* ============================================================
    REVEAL ON SCROLL
    ============================================================ */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease-smooth), transform .8s var(--ease-smooth);}
 .reveal.in{opacity:1;transform:translateY(0);}
-.reveal-stagger > *{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease;}
+.reveal-stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-smooth), transform .7s var(--ease-smooth);}
 .reveal-stagger.in > *{opacity:1;transform:translateY(0);}
-.reveal-stagger.in > *:nth-child(1){transition-delay:.05s;}
-.reveal-stagger.in > *:nth-child(2){transition-delay:.15s;}
-.reveal-stagger.in > *:nth-child(3){transition-delay:.25s;}
-.reveal-stagger.in > *:nth-child(4){transition-delay:.35s;}
-.reveal-stagger.in > *:nth-child(5){transition-delay:.45s;}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.06s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.14s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.22s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.3s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.38s;}
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important;transition:none !important;}
   .reveal,.reveal-stagger>*{opacity:1;transform:none;}
@@ -245,13 +250,15 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
 .value-grid{grid-template-columns:repeat(3,1fr);}
 .card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 22px;transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  padding:26px 22px;transition:transform .45s var(--ease-smooth), box-shadow .45s var(--ease-smooth), border-color .3s ease;
 }
-.card:hover{transform:translateY(-6px);box-shadow:0 20px 36px -22px rgba(43,16,66,0.3);border-color:var(--violet-400);}
+.card:hover{transform:translateY(-8px);box-shadow:0 24px 40px -22px rgba(43,16,66,0.32);border-color:var(--violet-400);}
 .icon-tile{
   width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
   background:var(--mist-100);color:var(--purple-700);margin-bottom:16px;
+  transition:background .45s var(--ease-smooth), color .45s var(--ease-smooth);
 }
+.card:hover .icon-tile{background:linear-gradient(145deg,var(--purple-700),var(--violet-400));color:#fff;}
 .card h3{margin-bottom:8px;color:var(--purple-900);}
 .card p{font-size:14.5px;}
 
@@ -278,9 +285,9 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
 .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:46px;}
 .service-card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:30px 28px;transition:transform .3s ease, box-shadow .3s ease;
+  padding:30px 28px;transition:transform .45s var(--ease-smooth), box-shadow .45s var(--ease-smooth);
 }
-.service-card:hover{transform:translateY(-5px);box-shadow:0 20px 36px -22px rgba(43,16,66,0.28);}
+.service-card:hover{transform:translateY(-7px);box-shadow:0 24px 40px -22px rgba(43,16,66,0.3);}
 .service-card .icon-tile{background:linear-gradient(145deg,var(--purple-700),var(--violet-400));color:#fff;}
 
 /* partner / why-us split with image */
@@ -319,19 +326,6 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
 }
 .promise-box p{font-style:italic;font-size:18px;color:var(--purple-900);max-width:680px;margin:0 auto;}
 
-/* ============================================================
-   INTERNSHIP
-   ============================================================ */
-.intern-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:54px;align-items:center;}
-.chip-row{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px;}
-.chip{
-  font-family:var(--font-mono);font-size:12px;letter-spacing:.03em;
-  padding:8px 14px;border-radius:100px;background:var(--mist-100);color:var(--purple-700);border:1px solid var(--line);
-}
-.intern-list li{display:flex;gap:12px;padding:12px 0;}
-.intern-list .tick{flex:none;width:22px;height:22px;border-radius:50%;background:var(--purple-700);color:#fff;display:flex;align-items:center;justify-content:center;margin-top:3px;}
-.intern-list h4{font-family:var(--font-body);font-weight:600;font-size:15px;color:var(--purple-900);}
-.intern-list p{font-size:13.8px;margin:2px 0 0;}
 
 /* ============================================================
    CONTACT
@@ -366,7 +360,7 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
    RESPONSIVE
    ============================================================ */
 @media (max-width:980px){
-  .hero-grid,.about-grid,.partner-grid,.mv-grid,.intern-grid,.contact-grid{grid-template-columns:1fr;}
+  .hero-grid,.about-grid,.partner-grid,.mv-grid,.contact-grid{grid-template-columns:1fr;}
   .hero-grid{gap:60px;}
   .weave-wrap{order:-1;max-width:300px;}
   .value-grid{grid-template-columns:repeat(2,1fr);}
@@ -405,7 +399,6 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#how-we-work">How We Work</a>
-      <a href="#internship">Internship</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -432,9 +425,9 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
         <a href="#services" class="btn btn-outline">Explore Services</a>
       </div>
       <div class="stat-row">
-        <div class="stat"><strong data-count="15" data-suffix="+">0</strong><span>Businesses Served</span></div>
-        <div class="stat"><strong data-count="2023" data-no-anim="true">2023</strong><span>Founded</span></div>
-        <div class="stat"><strong data-count="100" data-suffix="%">0</strong><span>Remote Internships</span></div>
+        <div class="stat"><strong id="cfgStat1Num" data-count="15" data-suffix="+">0</strong><span id="cfgStat1Label">Businesses Served</span></div>
+        <div class="stat"><strong id="cfgStat2Num" data-count="2023" data-no-anim="true">2023</strong><span id="cfgStat2Label">Founded</span></div>
+        <div class="stat"><strong id="cfgStat3Num" data-count="2" data-suffix="+">0</strong><span id="cfgStat3Label">Core Products Built</span></div>
       </div>
     </div>
 
@@ -540,12 +533,12 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
     </div>
     <div class="mv-grid reveal-stagger">
       <div class="mv-card">
-        <span class="quote-mark">“</span>
+        <span class="quote-mark">"</span>
         <h3>Our Mission</h3>
         <p>To create simple and elegant software solutions that even users with limited technical knowledge can use without barriers — simplifying the complex challenges small and medium businesses face through accurate, secure, modern technology.</p>
       </div>
       <div class="mv-card alt">
-        <span class="quote-mark">“</span>
+        <span class="quote-mark">"</span>
         <h3>Our Vision</h3>
         <p>Believing technology belongs to everyone, our long-term vision is to create world-class yet simple software products and reach a new milestone in the business management industry.</p>
       </div>
@@ -662,47 +655,6 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
 </section>
 
 <!-- ============================================================
-     INTERNSHIP & PROJECT GUIDANCE
-     ============================================================ -->
-<section class="section section-alt" id="internship">
-  <div class="wrap intern-grid">
-    <div class="reveal">
-      <span class="eyebrow">For Students</span>
-      <h2>Internship &amp; Final Year Project Guidance</h2>
-      <p style="margin-top:14px;">100% online internships and final year project guidance — gain real, practical software development experience from anywhere.</p>
-      <div class="chip-row">
-        <span class="chip">Android (Java / Kotlin)</span>
-        <span class="chip">FastAPI Backend</span>
-        <span class="chip">Database Design</span>
-        <span class="chip">Software Architecture</span>
-      </div>
-      <a href="#contact" class="btn btn-solid">Apply for an Internship</a>
-    </div>
-
-    <div class="reveal">
-      <ul class="intern-list">
-        <li>
-          <span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span>
-          <div><h4>Final Year Project Guidance</h4><p>From idea finalisation and architecture design to development, testing and documentation support.</p></div>
-        </li>
-        <li>
-          <span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span>
-          <div><h4>Live Project Exposure</h4><p>Direct exposure to real-world Android and web applications already in production use.</p></div>
-        </li>
-        <li>
-          <span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span>
-          <div><h4>Online Mentoring &amp; Code Reviews</h4><p>Regular sessions, doubt-clearing and code reviews from experienced developers.</p></div>
-        </li>
-        <li>
-          <span class="tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg></span>
-          <div><h4>Fully Remote Format</h4><p>Learn and build from your own location, at your own convenient time.</p></div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      CONTACT
      ============================================================ -->
 <section class="section contact-section" id="contact">
@@ -719,36 +671,36 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
           <div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
             <small>Address</small>
-            <!-- UPDATE YOUR ADDRESS HERE -->
-            <span class="value">Nagar, Chetti Palayam, Tirupur 641444, Tamil Nadu</span>
+            <!-- Address text now comes from SITE_CONFIG at the top of the script below -->
+            <span class="value" id="cfgAddress">Nagar, Chetti Palayam, Tirupur 641444, Tamil Nadu</span>
           </div>
         </div>
         <div class="contact-row">
           <div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div>
           <div>
             <small>Phone</small>
-            <!-- UPDATE YOUR PHONE NUMBER HERE -->
-            <a href="tel:+919942040000">+91 99420 40000</a>
+            <!-- Phone number now comes from SITE_CONFIG at the top of the script below -->
+            <a href="tel:+919942040000" id="cfgPhoneLink">+91 99420 40000</a>
           </div>
         </div>
         <div class="contact-row">
           <div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
           <div>
             <small>Email</small>
-            <!-- UPDATE YOUR EMAIL HERE -->
-            <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+            <!-- Email now comes from SITE_CONFIG at the top of the script below -->
+            <a href="mailto:abc@gmail.com" id="cfgEmailLink1">abc@gmail.com</a>
           </div>
         </div>
       </div>
 
       <div class="contact-cta reveal">
         <p style="color:rgba(255,255,255,0.8);">Prefer to chat directly? Reach us on WhatsApp for the quickest response.</p>
-        <!-- UPDATE THE WHATSAPP NUMBER IN THIS LINK (country code + number, no spaces) -->
-        <a href="https://wa.me/919942040000" target="_blank" rel="noopener" class="btn btn-gold">
+        <!-- WhatsApp number now comes from SITE_CONFIG at the top of the script below -->
+        <a href="https://wa.me/919942040000" target="_blank" rel="noopener" class="btn btn-gold" id="cfgWhatsappLink">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.7 14.2c-.2.6-1.4 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1.1-2.5.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.4.2.5.7 1.7.7 1.8.1.2.1.4 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.4.4-.2.7.3.5 1 1.3 1.7 1.9.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg>
           Chat on WhatsApp
         </a>
-        <a href="mailto:abc@gmail.com" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:#fff;background:transparent;">Send an Email</a>
+        <a href="mailto:abc@gmail.com" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:#fff;background:transparent;" id="cfgEmailLink2">Send an Email</a>
       </div>
     </div>
   </div>
@@ -766,9 +718,50 @@ footer{background:var(--purple-900);border-top:1px solid rgba(255,255,255,0.1);p
 
 <script>
 // ============================================================
-// CONFIG — small things you'll want to change often live here.
-// (For deeper edits, search the HTML for the matching comment.)
+// 📝 SITE CONFIG — everything you'll want to change often lives
+// right here. Edit a value below and it updates everywhere on
+// the page automatically. No need to hunt through the HTML.
 // ============================================================
+const SITE_CONFIG = {
+  address: "Nagar, Chetti Palayam, Tirupur 641444, Tamil Nadu",
+  phoneDisplay: "+91 99420 40000",   // shown to visitors
+  phoneDial: "+919942040000",        // used in tel: link — no spaces
+  email: "abc@gmail.com",
+  whatsappNumber: "919942040000",    // country code + number, no + or spaces
+  stats: {
+    stat1: { number: 15, suffix: "+", label: "Businesses Served" },
+    stat2: { number: 2023, suffix: "", label: "Founded", noAnim: true },
+    stat3: { number: 2,  suffix: "+", label: "Core Products Built" }
+  }
+};
+
+// applies SITE_CONFIG above to the matching elements on the page
+function applySiteConfig(cfg) {
+  document.getElementById('cfgAddress').textContent = cfg.address;
+
+  const phoneLink = document.getElementById('cfgPhoneLink');
+  phoneLink.href = `tel:${cfg.phoneDial}`;
+  phoneLink.textContent = cfg.phoneDisplay;
+
+  document.getElementById('cfgEmailLink1').href = `mailto:${cfg.email}`;
+  document.getElementById('cfgEmailLink1').textContent = cfg.email;
+  document.getElementById('cfgEmailLink2').href = `mailto:${cfg.email}`;
+
+  document.getElementById('cfgWhatsappLink').href = `https://wa.me/${cfg.whatsappNumber}`;
+
+  Object.entries(cfg.stats).forEach(([key, stat]) => {
+    const numEl = document.getElementById(`${key === 'stat1' ? 'cfgStat1Num' : key === 'stat2' ? 'cfgStat2Num' : 'cfgStat3Num'}`);
+    const labelEl = document.getElementById(`${key === 'stat1' ? 'cfgStat1Label' : key === 'stat2' ? 'cfgStat2Label' : 'cfgStat3Label'}`);
+    if (!numEl || !labelEl) return;
+    numEl.dataset.count = stat.number;
+    numEl.dataset.suffix = stat.suffix || '';
+    if (stat.noAnim) { numEl.dataset.noAnim = "true"; numEl.textContent = stat.number; }
+    else { numEl.textContent = '0'; delete numEl.dataset.noAnim; }
+    labelEl.textContent = stat.label;
+  });
+}
+applySiteConfig(SITE_CONFIG);
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // header shadow/background once page is scrolled
