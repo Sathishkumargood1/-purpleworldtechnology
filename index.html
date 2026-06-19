@@ -3,13 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://purpleworldtechnology.com/">
 <link rel="icon" type="image/png" href="images/pwtlogo.png">
-<title>Purple World Technology | Billing &amp; ERP Software for Small Businesses</title>
-<meta name="description" content="Purple World Technology builds simple, secure mobile and web software — billing, ERP and process automation — for small and medium businesses across Tamil Nadu.">
+<link rel="apple-touch-icon" href="images/pwtlogo.png">
+<title>Purple World Technology | Billing &amp; ERP Software for Tamil Nadu MSMEs</title>
+<meta name="description" content="Purple World Technology builds Purple One — an all-in-one Android ERP and billing app for retail, wholesale, restaurant, photography studio and Mandi businesses across Tamil Nadu. Offline-first, GST-ready, secure.">
+<meta name="keywords" content="Purple World Technology, Purple One, ERP software Tamil Nadu, billing software for small business, GST billing app, retail billing software, restaurant POS app, Mandi billing software, MSME software Tirupur, Android ERP app">
+<meta name="author" content="Purple World Technology">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Purple World Technology">
+<meta property="og:url" content="https://purpleworldtechnology.com/">
+<meta property="og:title" content="Purple World Technology | Billing &amp; ERP Software for Tamil Nadu MSMEs">
+<meta property="og:description" content="Meet Purple One — one Android app, every business type. Smart billing, inventory, GST and 40+ reports built for Tamil Nadu's retail, wholesale, restaurant, studio and Mandi businesses.">
+<meta property="og:image" content="https://purpleworldtechnology.com/images/pwtlogo.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Purple World Technology | Billing &amp; ERP Software for Tamil Nadu MSMEs">
+<meta name="twitter:description" content="Meet Purple One — one Android app, every business type. Smart billing, inventory, GST and 40+ reports built for Tamil Nadu MSMEs.">
+<meta name="twitter:image" content="https://purpleworldtechnology.com/images/pwtlogo.png">
+
+<meta name="theme-color" content="#2B1042">
+<meta name="geo.region" content="IN-TN">
+<meta name="geo.placename" content="Tirupur, Tamil Nadu">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Purple World Technology",
+  "alternateName": "PWT",
+  "url": "https://purpleworldtechnology.com/",
+  "logo": "https://purpleworldtechnology.com/images/pwtlogo.png",
+  "foundingDate": "2023",
+  "description": "Purple World Technology builds simple, secure mobile and web software — billing, ERP and process automation — for small and medium businesses across Tamil Nadu.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Chetti Palayam",
+    "addressLocality": "Tirupur",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "641603",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-99427-40469",
+    "contactType": "customer support",
+    "email": "support@purpleworldtechnology.com",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Tamil"]
+  },
+  "sameAs": [
+    "https://www.instagram.com/purple_world_technology",
+    "https://wa.me/919942740469"
+  ]
+}
+</script>
+
+<!-- Structured Data: SoftwareApplication (Purple One) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Purple One",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Android",
+  "description": "Purple One is an all-in-one ERP and billing Android app for retail, wholesale, restaurant, photography studio, Mandi and other Tamil Nadu MSME businesses. Offline-first, GST-ready, with thermal print and WhatsApp billing.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Purple World Technology"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "description": "15-day free trial"
+  }
+}
+</script>
 <style>
 /* ===== TOKENS ===== */
 :root{
@@ -58,7 +141,9 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);di
 header.scrolled{background:linear-gradient(120deg,var(--purple-900),#481676);}
 .nav-row{display:flex;align-items:center;justify-content:space-between;width:100%;}
 .brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#fff;}
-.logo-badge{width:42px;height:42px;border-radius:12px;flex:none;background:linear-gradient(145deg,var(--gold-500),#c97f1f);position:relative;overflow:hidden;box-shadow:0 6px 14px -6px rgba(0,0,0,0.4);}
+.logo-badge{width:42px;height:42px;border-radius:12px;flex:none;
+ background: #ffffff;
+  position:relative;overflow:hidden;box-shadow:0 6px 14px -6px rgba(0,0,0,0.4);}
 .logo-badge img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .brand-text{display:flex;flex-direction:column;line-height:1.2;}
 .brand-text strong{font-size:25px;letter-spacing:-0.01em;}
@@ -81,7 +166,7 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
   .menu-toggle{display:flex;}
 }
 
-/* ===== HERO — Simplita-style cinematic full page ===== */
+/* ===== HERO ===== */
 .hero{
   min-height:100vh;
   display:flex;
@@ -92,355 +177,139 @@ nav.main-nav a:hover::after,nav.main-nav a.active::after{width:100%;}
   background:radial-gradient(ellipse 120% 80% at 50% 0%,#3a0f6e 0%,#1a0535 45%,#0d021e 100%);
   text-align:center;
 }
-
-/* Particle canvas — full bleed */
-#heroCanvas{
-  position:absolute;inset:0;
-  width:100%;height:100%;
-  pointer-events:none;
-  z-index:0;
-}
-
-/* Radial spotlight glow from center-top */
-.hero-spotlight{
-  position:absolute;
-  top:-10%;left:50%;
-  transform:translateX(-50%);
-  width:900px;height:600px;
-  background:radial-gradient(ellipse at 50% 0%,rgba(155,107,240,0.22) 0%,rgba(91,26,139,0.1) 40%,transparent 70%);
-  pointer-events:none;z-index:1;
-}
-/* Gold accent glow bottom-left */
-.hero-glow-bl{
-  position:absolute;bottom:-80px;left:-60px;
-  width:500px;height:400px;
-  background:radial-gradient(circle,rgba(232,162,61,0.08),transparent 65%);
-  pointer-events:none;z-index:1;
-}
-/* Violet glow bottom-right */
-.hero-glow-br{
-  position:absolute;bottom:-60px;right:-60px;
-  width:420px;height:360px;
-  background:radial-gradient(circle,rgba(155,107,240,0.09),transparent 65%);
-  pointer-events:none;z-index:1;
-}
-
-/* Animated grid lines — Simplita-style */
-.hero-grid-lines{
-  position:absolute;inset:0;z-index:1;
-  background-image:
-    linear-gradient(rgba(155,107,240,0.045) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(155,107,240,0.045) 1px,transparent 1px);
-  background-size:72px 72px;
-  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 10%,transparent 100%);
-  animation:gridFade 3s ease-in-out forwards;
-}
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+.hero-spotlight{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse at 50% 0%,rgba(155,107,240,0.22) 0%,rgba(91,26,139,0.1) 40%,transparent 70%);pointer-events:none;z-index:1;}
+.hero-glow-bl{position:absolute;bottom:-80px;left:-60px;width:500px;height:400px;background:radial-gradient(circle,rgba(232,162,61,0.08),transparent 65%);pointer-events:none;z-index:1;}
+.hero-glow-br{position:absolute;bottom:-60px;right:-60px;width:420px;height:360px;background:radial-gradient(circle,rgba(155,107,240,0.09),transparent 65%);pointer-events:none;z-index:1;}
+.hero-grid-lines{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(155,107,240,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(155,107,240,0.045) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 10%,transparent 100%);animation:gridFade 3s ease-in-out forwards;}
 @keyframes gridFade{from{opacity:0;}to{opacity:1;}}
-
-/* Horizontal scan line */
-.hero-scanline{
-display: none;
-  position:absolute;left:0;right:0;height:1px;z-index:2;
-  background:linear-gradient(90deg,transparent 0%,rgba(155,107,240,0.5) 20%,rgba(232,162,61,0.7) 50%,rgba(155,107,240,0.5) 80%,transparent 100%);
-  animation:scanDown 4s ease-in-out 0.5s infinite;
-  top:0;
-}
-@keyframes scanDown{
-  0%{top:0%;opacity:0;}
-  5%{opacity:1;}
-  95%{opacity:1;}
-  100%{top:100%;opacity:0;}
-}
-
-.hero-inner{
-  position:relative;
-  z-index:3;
-  width:100%;
-  max-width:860px;
-  margin:0 auto;
-  padding:calc(var(--header-h) + 60px) 28px 80px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
-}
-
-/* Eyebrow pill — Simplita style */
-.hero-pill{
-  display:inline-flex;align-items:center;gap:9px;
-  background:rgba(155,107,240,0.1);
-  border:1px solid rgba(155,107,240,0.3);
-  border-radius:100px;
-  padding:7px 18px;
-  margin-bottom:32px;
-  opacity:0;animation:fadeUp .7s var(--ease-smooth) .2s forwards;
-  backdrop-filter:blur(8px);
-}
-.hero-pill-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--gold-500);
-  box-shadow:0 0 6px rgba(232,162,61,0.8);
-  animation:pulseDot 2s ease-in-out infinite;
-}
+.hero-inner{position:relative;z-index:3;width:100%;max-width:860px;margin:0 auto;padding:calc(var(--header-h) + 60px) 28px 80px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;}
+.hero-pill{display:inline-flex;align-items:center;gap:9px;background:rgba(155,107,240,0.1);border:1px solid rgba(155,107,240,0.3);border-radius:100px;padding:7px 18px;margin-bottom:32px;opacity:0;animation:fadeUp .7s var(--ease-smooth) .2s forwards;backdrop-filter:blur(8px);}
+.hero-pill-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-500);box-shadow:0 0 6px rgba(232,162,61,0.8);animation:pulseDot 2s ease-in-out infinite;}
 .hero-pill span{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(155,107,240,0.9);}
 @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.7);}}
-
-/* Main headline — HUGE, Simplita scale */
-.hero-headline-block{
-  opacity:0;animation:fadeUp 1s var(--ease-smooth) .4s forwards;
-  margin-bottom:24px;
-}
-.hero-headline-block h1{
-  font-family:var(--font-display);
-  font-weight:800;
-  font-size:clamp(44px,7.5vw,96px);
-  line-height:1.0;
-  letter-spacing:-0.03em;
-  color:#fff;
-  margin-bottom:0;
-}
-/* Gradient text on "You Rule It" */
-.hero-headline-block h1 .gold{
-  background:linear-gradient(135deg,var(--gold-500) 0%,#f5c26b 50%,var(--gold-500) 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-  background-size:200%;
-  animation:goldShimmer 4s ease-in-out infinite;
-}
+.hero-headline-block{opacity:0;animation:fadeUp 1s var(--ease-smooth) .4s forwards;margin-bottom:24px;}
+.hero-headline-block h1{font-family:var(--font-display);font-weight:800;font-size:clamp(44px,7.5vw,96px);line-height:1.0;letter-spacing:-0.03em;color:#fff;margin-bottom:0;}
+.hero-headline-block h1 .gold{background:linear-gradient(135deg,var(--gold-500) 0%,#f5c26b 50%,var(--gold-500) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:goldShimmer 4s ease-in-out infinite;}
 @keyframes goldShimmer{0%,100%{background-position:0%;}50%{background-position:200%;}}
-
-/* Subtitle */
-.hero-subhead{
-  font-family:var(--font-body);
-  font-size:clamp(15px,1.8vw,19px);
-  font-weight:400;
-  color:rgba(255,255,255,0.42);
-  letter-spacing:0.01em;
-  margin-top:14px;
-  opacity:0;animation:fadeUp .9s var(--ease-smooth) .55s forwards;
-}
-
-/* Typewriter — smaller, secondary, below headline */
-.tw-block{
-  margin-top:28px;
-  margin-bottom:44px;
-  opacity:0;animation:fadeUp .9s var(--ease-smooth) .7s forwards;
-  display:flex;align-items:center;justify-content:center;gap:10px;
-}
-.tw-we-craft{
-  font-family:var(--font-mono);
-  font-size:clamp(13px,1.4vw,16px);
-  color:rgba(255,255,255,0.28);
-  letter-spacing:0.08em;
-  white-space:nowrap;
-}
-.tw-text{
-  font-family:var(--font-mono);
-  font-size:clamp(13px,1.4vw,16px);
-  font-weight:500;
-  color:var(--violet-400);
-  border-right:2px solid var(--gold-500);
-  padding-right:3px;
-  animation:blink .75s step-end infinite;
-  white-space:nowrap;
-  min-width:3px;
-}
+.hero-subhead{font-family:var(--font-body);font-size:clamp(15px,1.8vw,19px);font-weight:400;color:rgba(255,255,255,0.42);letter-spacing:0.01em;margin-top:14px;opacity:0;animation:fadeUp .9s var(--ease-smooth) .55s forwards;}
+.tw-block{margin-top:28px;margin-bottom:44px;opacity:0;animation:fadeUp .9s var(--ease-smooth) .7s forwards;display:flex;align-items:center;justify-content:center;gap:10px;}
+.tw-we-craft{font-family:var(--font-mono);font-size:clamp(13px,1.4vw,16px);color:rgba(255,255,255,0.28);letter-spacing:0.08em;white-space:nowrap;}
+.tw-text{font-family:var(--font-mono);font-size:clamp(13px,1.4vw,16px);font-weight:500;color:var(--violet-400);border-right:2px solid var(--gold-500);padding-right:3px;animation:blink .75s step-end infinite;white-space:nowrap;min-width:3px;}
 @keyframes blink{50%{border-color:transparent;}}
-
-/* Hero CTAs */
-.hero-ctas{
-  display:flex;gap:14px;flex-wrap:wrap;justify-content:center;
-  margin-bottom:56px;
-  opacity:0;animation:fadeUp .9s var(--ease-smooth) .88s forwards;
-}
-.btn-hero-primary{
-  background:linear-gradient(135deg,var(--gold-500),#d4882a);
-  color:var(--purple-900);
-  border-radius:100px;padding:15px 34px;
-  font-weight:700;font-size:15px;
-  display:inline-flex;align-items:center;gap:8px;
-  transition:all .4s var(--ease-smooth);
-  box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 0 rgba(232,162,61,0);
-  cursor:pointer;border:none;font-family:var(--font-body);
-  animation:ctaPulse 3s ease-in-out 2s infinite;
-}
-@keyframes ctaPulse{
-  0%,100%{box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 0 rgba(232,162,61,0);}
-  50%{box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 8px rgba(232,162,61,0);}
-}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:56px;opacity:0;animation:fadeUp .9s var(--ease-smooth) .88s forwards;}
+.btn-hero-primary{background:linear-gradient(135deg,var(--gold-500),#d4882a);color:var(--purple-900);border-radius:100px;padding:15px 34px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .4s var(--ease-smooth);box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 0 rgba(232,162,61,0);cursor:pointer;border:none;font-family:var(--font-body);animation:ctaPulse 3s ease-in-out 2s infinite;}
+@keyframes ctaPulse{0%,100%{box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 0 rgba(232,162,61,0);}50%{box-shadow:0 8px 32px -8px rgba(232,162,61,0.55),0 0 0 8px rgba(232,162,61,0);}}
 .btn-hero-primary:hover{transform:translateY(-3px);box-shadow:0 18px 40px -12px rgba(232,162,61,0.7);}
-.btn-hero-ghost{
-  border:1px solid rgba(155,107,240,0.4);
-  color:rgba(255,255,255,0.85);
-  background:rgba(155,107,240,0.08);
-  border-radius:100px;padding:14px 30px;
-  font-weight:500;font-size:15px;
-  display:inline-flex;align-items:center;gap:8px;
-  transition:all .4s var(--ease-smooth);
-  cursor:pointer;font-family:var(--font-body);
-  backdrop-filter:blur(6px);
-}
+.btn-hero-ghost{border:1px solid rgba(155,107,240,0.4);color:rgba(255,255,255,0.85);background:rgba(155,107,240,0.08);border-radius:100px;padding:14px 30px;font-weight:500;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .4s var(--ease-smooth);cursor:pointer;font-family:var(--font-body);backdrop-filter:blur(6px);}
 .btn-hero-ghost:hover{border-color:rgba(155,107,240,0.8);background:rgba(155,107,240,0.16);}
-
-/* Stats bar */
-.hero-stats-bar{
-  display:flex;align-items:center;justify-content:center;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:16px;
-  padding:22px 44px;
-  opacity:0;animation:fadeUp .9s var(--ease-smooth) 1.05s forwards;
-  flex-wrap:wrap;
-  backdrop-filter:blur(12px);
-  gap:0;
-}
+.hero-stats-bar{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:22px 44px;opacity:0;animation:fadeUp .9s var(--ease-smooth) 1.05s forwards;flex-wrap:wrap;backdrop-filter:blur(12px);gap:0;}
 .hstat{text-align:center;padding:0 36px;}
 .hstat+.hstat{border-left:1px solid rgba(255,255,255,0.08);}
 .hstat strong{display:block;font-family:var(--font-display);font-size:clamp(22px,2.8vw,32px);font-weight:700;color:#fff;letter-spacing:-0.02em;}
 .hstat span{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);}
-
-/* Scroll chevron */
-.hero-scroll{
-  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-  opacity:0;animation:fadeUp .8s var(--ease-smooth) 1.4s forwards;
-}
+.hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;animation:fadeUp .8s var(--ease-smooth) 1.4s forwards;}
 .hero-scroll span{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.2);}
-.scroll-chevron{
-  width:22px;height:22px;
-  border-right:1.5px solid rgba(232,162,61,0.5);
-  border-bottom:1.5px solid rgba(232,162,61,0.5);
-  transform:rotate(45deg);
-  animation:chevBounce 1.8s ease-in-out infinite;
-}
+.scroll-chevron{width:22px;height:22px;border-right:1.5px solid rgba(232,162,61,0.5);border-bottom:1.5px solid rgba(232,162,61,0.5);transform:rotate(45deg);animation:chevBounce 1.8s ease-in-out infinite;}
 @keyframes chevBounce{0%,100%{transform:rotate(45deg) translateY(0);opacity:.5;}50%{transform:rotate(45deg) translateY(5px);opacity:1;}}
-
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 
 /* ===== WHO WE ARE ===== */
 .about-section{padding:100px 0;background:var(--paper-50);}
 .about-text-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
 .about-left h2{color:var(--purple-900);margin:14px 0 20px;}
 .about-left p{font-size:15.5px;line-height:1.75;margin-bottom:14px;}
-.about-values{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px;}
-.av-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px;transition:transform .4s var(--ease-smooth),box-shadow .4s var(--ease-smooth);}
+.about-values{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px;}
+.av-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;transition:transform 0.4s var(--ease-smooth),box-shadow 0.4s var(--ease-smooth);}
 .av-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px -12px rgba(43,16,66,0.2);}
-.av-icon{width:36px;height:36px;border-radius:10px;background:var(--mist-100);color:var(--purple-700);display:flex;align-items:center;justify-content:center;margin-bottom:10px;transition:background .4s var(--ease-smooth),color .4s var(--ease-smooth);}
+.av-icon{width:36px;height:36px;border-radius:10px;background:var(--mist-100);color:var(--purple-700);display:flex;align-items:center;justify-content:center;margin-bottom:15px;transition:background 0.4s var(--ease-smooth),color 0.4s var(--ease-smooth);}
 .av-card:hover .av-icon{background:linear-gradient(145deg,var(--purple-700),var(--violet-400));color:#fff;}
-.av-card h4{font-size:14px;font-weight:600;color:var(--purple-900);margin-bottom:4px;}
-.av-card p{font-size:12px;color:rgba(27,16,36,0.55);margin:0;}
+.av-card h4{font-size:15px;font-weight:600;color:var(--purple-900);margin-bottom:6px;}
+.av-card p{font-size:13px;color:rgba(27,16,36,0.65);margin:0;line-height:1.5;}
 
-/* About right — weave */
+/* ===== ABOUT WEAVE SVG ===== */
 .about-weave-side{display:flex;align-items:center;justify-content:center;}
-.about-weave-wrap{position:relative;width:100%;max-width:460px;aspect-ratio:1/1;margin:0 auto;animation:weaveBreathe 7s ease-in-out infinite;}
-@keyframes weaveBreathe{0%,100%{transform:scale(1);}50%{transform:scale(1.012);}}
-.about-weave-wrap svg{width:100%;height:100%;}
-.about-chip-circle{fill:var(--mist-100);stroke:rgba(91,26,139,0.2);stroke-width:1.5;}
-.about-chip-icon{stroke:var(--purple-700);stroke-width:1.8;fill:none;}
-.about-hub-circle{fill:var(--purple-900);stroke:var(--gold-500);stroke-width:2;}
-.about-chip-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;fill:var(--purple-900);opacity:0;animation:chipIn .6s var(--ease-smooth) forwards;}
-.about-thread-edge{fill:none;stroke-linecap:round;stroke-width:1.6;stroke-dasharray:4 6;opacity:0;animation:edgeIn 1s var(--ease-smooth) forwards;}
-.about-spoke{fill:none;stroke-linecap:round;stroke-width:2;stroke-dasharray:8 9;opacity:0;animation:spokeIn .8s var(--ease-smooth) forwards,spokeFlow 1.3s linear infinite;}
-.about-hub-glow{fill:none;stroke:var(--gold-500);stroke-width:1.5;opacity:0;animation:glowIn .8s var(--ease-smooth) forwards,hubPulse 2.8s ease-in-out infinite;}
-.module-chip{opacity:0;animation:chipIn .6s var(--ease-smooth) forwards,chipFloat 4.6s ease-in-out infinite;}
-@keyframes chipIn{from{opacity:0;transform:translateY(12px) scale(.85);}to{opacity:1;transform:translateY(0) scale(1);}}
-@keyframes chipFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
-@keyframes edgeIn{to{opacity:.32;}}
-@keyframes spokeIn{to{opacity:.65;}}
-@keyframes spokeFlow{to{stroke-dashoffset:-34;}}
-@keyframes glowIn{to{opacity:.22;}}
-@keyframes hubPulse{0%,100%{r:46;opacity:.2;}50%{r:60;opacity:.04;}}
+.about-weave-wrap{
+  position:relative;
+  width:100%;
+  max-width:460px;
+  aspect-ratio:1/1;
+  margin:0 auto;
+}
 
-/* ===== PURPLE ONE — PRODUCT SECTION ===== */
+/* SVG node animation keyframes */
+@keyframes weave-float-a{0%,100%{transform:translateY(0px);}50%{transform:translateY(-6px);}}
+@keyframes weave-float-b{0%,100%{transform:translateY(0px);}50%{transform:translateY(-5px);}}
+@keyframes weave-float-c{0%,100%{transform:translateY(0px);}50%{transform:translateY(-7px);}}
+@keyframes weave-hub-pulse{0%,100%{opacity:0.13;r:58;}50%{opacity:0.05;r:72;}}
+@keyframes weave-spoke-flow{to{stroke-dashoffset:-28;}}
+@keyframes weave-node-in{from{opacity:0;transform:scale(0.7);}to{opacity:1;transform:scale(1);}}
+@keyframes weave-gold-dot{0%,100%{opacity:0.5;}50%{opacity:1;}}
+
+/* Apply to .about-weave-wrap svg elements — triggered by .in class on parent .reveal */
+.about-weave-side.reveal.in .weave-node-1{animation:weave-node-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both,weave-float-a 4.2s ease-in-out 0.7s infinite;}
+.about-weave-side.reveal.in .weave-node-2{animation:weave-node-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s both,weave-float-b 4.8s ease-in-out 0.8s infinite;}
+.about-weave-side.reveal.in .weave-node-3{animation:weave-node-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.3s both,weave-float-c 5.1s ease-in-out 0.9s infinite;}
+.about-weave-side.reveal.in .weave-node-4{animation:weave-node-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.4s both,weave-float-a 4.6s ease-in-out 1.0s infinite;}
+.about-weave-side.reveal.in .weave-node-5{animation:weave-node-in 0.6s cubic-bezier(0.16,1,0.3,1) 0.5s both,weave-float-b 5.4s ease-in-out 1.1s infinite;}
+.about-weave-side.reveal.in .weave-hub-ring{animation:weave-hub-pulse 3s ease-in-out 0.6s infinite;}
+.about-weave-side.reveal.in .weave-spoke{animation:weave-spoke-flow 2s linear infinite;}
+.about-weave-side.reveal.in .weave-spoke-2{animation:weave-spoke-flow 2s linear -0.4s infinite;}
+.about-weave-side.reveal.in .weave-spoke-3{animation:weave-spoke-flow 2s linear -0.8s infinite;}
+.about-weave-side.reveal.in .weave-spoke-4{animation:weave-spoke-flow 2s linear -1.2s infinite;}
+.about-weave-side.reveal.in .weave-spoke-5{animation:weave-spoke-flow 2s linear -1.6s infinite;}
+.about-weave-side.reveal.in .weave-gold-dot{animation:weave-gold-dot 2s ease-in-out infinite;}
+
+/* All nodes start invisible until .in triggers */
+.weave-node-1,.weave-node-2,.weave-node-3,.weave-node-4,.weave-node-5{opacity:0;}
+.weave-hub-ring{opacity:0;}
+
+@media(prefers-reduced-motion:reduce){
+  .about-weave-side.reveal.in .weave-node-1,
+  .about-weave-side.reveal.in .weave-node-2,
+  .about-weave-side.reveal.in .weave-node-3,
+  .about-weave-side.reveal.in .weave-node-4,
+  .about-weave-side.reveal.in .weave-node-5{animation:weave-node-in 0.01s both;}
+  .about-weave-side.reveal.in .weave-hub-ring,
+  .about-weave-side.reveal.in .weave-spoke,
+  .about-weave-side.reveal.in .weave-spoke-2,
+  .about-weave-side.reveal.in .weave-spoke-3,
+  .about-weave-side.reveal.in .weave-spoke-4,
+  .about-weave-side.reveal.in .weave-spoke-5{animation:none;opacity:0.55;}
+  .weave-hub-ring{opacity:0.13;}
+}
+
+/* ===== PURPLE ONE ===== */
 .product-section{padding:100px 0;background:var(--mist-100);}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-
-/* ── Mobile mockup ── */
 .mobile-mockup-wrap{display:flex;justify-content:center;align-items:center;position:relative;}
-.mobile-frame{
-  width:268px;
-  background:#1a0a2e;
-  border-radius:44px;
-  border:2px solid rgba(155,107,240,0.4);
-  box-shadow:
-    0 0 0 6px rgba(155,107,240,0.06),
-    0 0 0 12px rgba(155,107,240,0.03),
-    0 50px 100px -30px rgba(43,16,66,0.65),
-    inset 0 1px 0 rgba(255,255,255,0.08);
-  overflow:hidden;
-  position:relative;
-}
-/* Side buttons */
-.mobile-frame::before{
-  content:"";position:absolute;right:-3px;top:90px;
-  width:3px;height:36px;
-  background:rgba(155,107,240,0.35);
-  border-radius:0 3px 3px 0;
-  box-shadow:0 44px 0 rgba(155,107,240,0.35);
-}
-.mobile-frame::after{
-  content:"";position:absolute;left:-3px;top:108px;
-  width:3px;height:54px;
-  background:rgba(155,107,240,0.35);
-  border-radius:3px 0 0 3px;
-  box-shadow:0 64px 0 rgba(155,107,240,0.35);
-}
-
-.mobile-notch{
-  width:108px;height:30px;background:#1a0a2e;
-  border-radius:0 0 20px 20px;
-  margin:0 auto;position:relative;z-index:2;
-  display:flex;align-items:center;justify-content:center;gap:7px;
-  border-bottom:1px solid rgba(155,107,240,0.2);
-}
+.mobile-frame{width:268px;background:#1a0a2e;border-radius:44px;border:2px solid rgba(155,107,240,0.4);box-shadow:0 0 0 6px rgba(155,107,240,0.06),0 0 0 12px rgba(155,107,240,0.03),0 50px 100px -30px rgba(43,16,66,0.65),inset 0 1px 0 rgba(255,255,255,0.08);overflow:hidden;position:relative;}
+.mobile-frame::before{content:"";position:absolute;right:-3px;top:90px;width:3px;height:36px;background:rgba(155,107,240,0.35);border-radius:0 3px 3px 0;box-shadow:0 44px 0 rgba(155,107,240,0.35);}
+.mobile-frame::after{content:"";position:absolute;left:-3px;top:108px;width:3px;height:54px;background:rgba(155,107,240,0.35);border-radius:3px 0 0 3px;box-shadow:0 64px 0 rgba(155,107,240,0.35);}
+.mobile-notch{width:108px;height:30px;background:#1a0a2e;border-radius:0 0 20px 20px;margin:0 auto;position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:7px;border-bottom:1px solid rgba(155,107,240,0.2);}
 .notch-cam{width:9px;height:9px;border-radius:50%;background:rgba(155,107,240,0.45);box-shadow:0 0 0 2px rgba(155,107,240,0.15);}
 .notch-mic{width:28px;height:5px;border-radius:3px;background:rgba(155,107,240,0.25);}
-
 .mobile-screen{padding:0 0 20px;background:linear-gradient(180deg,#140828 0%,#1c0a38 100%);}
-
-/* Status bar */
 .mob-status{display:flex;justify-content:space-between;align-items:center;padding:6px 18px 0;margin-bottom:2px;}
 .mob-status-time{font-family:var(--font-mono);font-size:10px;font-weight:600;color:rgba(255,255,255,0.7);}
 .mob-status-icons{display:flex;gap:4px;align-items:center;}
 .mob-status-icons svg{stroke:rgba(255,255,255,0.6);fill:none;}
-
-/* App header */
-.mob-header{
-  background:linear-gradient(135deg,var(--purple-900),var(--purple-700));
-  padding:10px 16px 14px;
-  display:flex;align-items:center;justify-content:space-between;
-  position:relative;
-}
+.mob-header{background:linear-gradient(135deg,var(--purple-900),var(--purple-700));padding:10px 16px 14px;display:flex;align-items:center;justify-content:space-between;position:relative;}
 .mob-header::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:rgba(255,255,255,0.08);}
 .mob-header-left strong{display:block;font-family:var(--font-display);font-size:13.5px;font-weight:700;color:#fff;}
 .mob-header-left small{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-500);opacity:.9;}
 .mob-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--gold-500),#c97f1f);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:12px;font-weight:700;color:var(--purple-900);}
-
-/* Greeting */
 .mob-greeting{padding:12px 16px 8px;display:flex;align-items:center;justify-content:space-between;}
 .mob-greeting-text strong{display:block;font-size:12px;font-weight:600;color:#fff;}
 .mob-greeting-text small{font-family:var(--font-mono);font-size:8px;color:rgba(255,255,255,0.35);letter-spacing:.04em;text-transform:uppercase;}
 .mob-notif{width:26px;height:26px;border-radius:8px;background:rgba(155,107,240,0.15);border:1px solid rgba(155,107,240,0.25);display:flex;align-items:center;justify-content:center;position:relative;}
 .mob-notif-dot{position:absolute;top:4px;right:4px;width:5px;height:5px;border-radius:50%;background:var(--gold-500);border:1.5px solid #140828;}
-
 .mob-body{padding:0 14px;}
-
-/* Stats row */
 .mob-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:10px;}
-.mob-stat{
-  background:rgba(155,107,240,0.1);
-  border:1px solid rgba(155,107,240,0.18);
-  border-radius:12px;padding:9px 7px;text-align:center;
-  position:relative;overflow:hidden;
-}
+.mob-stat{background:rgba(155,107,240,0.1);border:1px solid rgba(155,107,240,0.18);border-radius:12px;padding:9px 7px;text-align:center;position:relative;overflow:hidden;}
 .mob-stat::before{content:"";position:absolute;top:-12px;right:-12px;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle,rgba(155,107,240,0.15),transparent);}
 .mob-stat strong{display:block;font-family:var(--font-display);font-size:13px;font-weight:700;color:#fff;}
 .mob-stat small{font-family:var(--font-mono);font-size:7px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,0.38);}
-
-/* Mini chart bar */
 .mob-chart{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:10px 12px;margin-bottom:10px;}
 .mob-chart-head{display:flex;justify-content:space-between;margin-bottom:8px;}
 .mob-chart-head span{font-family:var(--font-mono);font-size:8px;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,0.35);}
@@ -449,7 +318,6 @@ display: none;
 .mob-bar{flex:1;border-radius:3px 3px 0 0;background:rgba(155,107,240,0.25);}
 .mob-bar.hi{background:linear-gradient(to top,var(--purple-700),var(--violet-400));}
 .mob-bar.gold{background:linear-gradient(to top,#c97f1f,var(--gold-500));}
-
 .mob-section-label{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin:8px 0 6px;}
 .mob-list{display:flex;flex-direction:column;gap:5px;}
 .mob-item{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:7px 9px;transition:background .3s;}
@@ -460,35 +328,14 @@ display: none;
 .mob-badge{margin-left:auto;font-family:var(--font-mono);font-size:7px;padding:2px 7px;border-radius:100px;white-space:nowrap;}
 .mob-badge.live{background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.2);}
 .mob-badge.soon{background:rgba(155,107,240,0.18);color:var(--violet-400);border:1px solid rgba(155,107,240,0.2);}
-
-.mob-bottom-nav{
-  display:flex;justify-content:space-around;
-  padding:10px 8px 6px;
-  border-top:1px solid rgba(255,255,255,0.07);
-  margin-top:10px;
-  background:rgba(0,0,0,0.15);
-}
+.mob-bottom-nav{display:flex;justify-content:space-around;padding:10px 8px 6px;border-top:1px solid rgba(255,255,255,0.07);margin-top:10px;background:rgba(0,0,0,0.15);}
 .mob-nav-item{display:flex;flex-direction:column;align-items:center;gap:3px;opacity:.38;cursor:pointer;}
 .mob-nav-item.active{opacity:1;}
 .mob-nav-item svg{stroke:var(--gold-500);}
 .mob-nav-item span{font-family:var(--font-mono);font-size:7px;letter-spacing:.04em;color:var(--gold-500);}
 .mob-nav-item:not(.active) svg{stroke:rgba(255,255,255,0.4);}
 .mob-nav-item:not(.active) span{color:rgba(255,255,255,0.3);}
-
-/* Floating badges */
-.mob-float{
-  position:absolute;
-  background:#fff;
-  border-radius:14px;
-  padding:9px 14px;
-  box-shadow:0 12px 32px -10px rgba(43,16,66,0.28);
-  border:1px solid rgba(43,16,66,0.08);
-  font-size:12px;
-  font-weight:700;
-  color:var(--purple-900);
-  white-space:nowrap;
-  display:flex;align-items:center;gap:8px;
-}
+.mob-float{position:absolute;background:#fff;border-radius:14px;padding:9px 14px;box-shadow:0 12px 32px -10px rgba(43,16,66,0.28);border:1px solid rgba(43,16,66,0.08);font-size:12px;font-weight:700;color:var(--purple-900);white-space:nowrap;display:flex;align-items:center;gap:8px;}
 .mob-float-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none;}
 .mob-float-body strong{display:block;font-size:11.5px;font-weight:700;color:var(--purple-900);}
 .mob-float-body span{display:block;font-size:9.5px;font-weight:400;color:rgba(27,16,36,0.45);font-family:var(--font-mono);letter-spacing:.03em;}
@@ -496,22 +343,13 @@ display: none;
 .mob-float-2{bottom:100px;left:-68px;animation:badgeFloat 4s ease-in-out 1.5s infinite;}
 .mob-float-3{bottom:32px;right:-58px;animation:badgeFloat 4s ease-in-out 3s infinite;}
 @keyframes badgeFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-
-/* ── Product details right side ── */
 .product-right{}
 .product-right h2{color:var(--purple-900);margin:14px 0 8px;}
 .product-right .product-tagline{font-size:15px;color:rgba(27,16,36,0.55);margin-bottom:28px;font-style:italic;}
-
 .product-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;}
 .p-badge{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:100px;background:var(--mist-100);color:var(--purple-700);border:1px solid rgba(91,26,139,0.15);}
-
 .verticals-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px;}
-.vcard{
-  background:#fff;border:1px solid var(--line);border-radius:12px;
-  padding:14px;
-  display:flex;align-items:flex-start;gap:10px;
-  transition:transform .35s var(--ease-smooth),box-shadow .35s var(--ease-smooth),border-color .3s;
-}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;align-items:flex-start;gap:10px;transition:transform .35s var(--ease-smooth),box-shadow .35s var(--ease-smooth),border-color .3s;}
 .vcard:hover{transform:translateY(-3px);box-shadow:0 10px 24px -12px rgba(43,16,66,0.2);border-color:var(--violet-400);}
 .vcard-icon{width:34px;height:34px;border-radius:9px;background:var(--mist-100);display:flex;align-items:center;justify-content:center;flex:none;transition:background .35s;}
 .vcard:hover .vcard-icon{background:linear-gradient(145deg,var(--purple-700),var(--violet-400));}
@@ -519,7 +357,6 @@ display: none;
 .vcard-icon svg{stroke:var(--purple-700);fill:none;transition:stroke .35s;}
 .vcard h4{font-size:12.5px;font-weight:600;color:var(--purple-900);margin-bottom:2px;}
 .vcard p{font-size:11px;color:rgba(27,16,36,0.5);margin:0;}
-
 .product-features{margin-bottom:28px;}
 .pf-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);}
 .pf-row:last-child{border-bottom:none;}
@@ -527,7 +364,6 @@ display: none;
 .pf-tick svg{stroke:var(--purple-900);fill:none;}
 .pf-row h4{font-size:14px;font-weight:600;color:var(--purple-900);margin-bottom:2px;}
 .pf-row p{font-size:13px;color:rgba(27,16,36,0.58);margin:0;}
-
 .product-ctas{display:flex;gap:12px;flex-wrap:wrap;}
 
 /* ===== SECTION SCAFFOLDING ===== */
@@ -537,12 +373,10 @@ display: none;
 .section-head p{margin-top:14px;font-size:16px;}
 .section-alt{background:var(--mist-100);}
 .thread-divider{height:34px;width:100%;background-image:repeating-linear-gradient(100deg,transparent 0 26px,var(--line) 26px 27px);opacity:.7;}
-.img-frame{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(150deg,var(--purple-700),var(--purple-900));box-shadow:0 24px 48px -24px rgba(43,16,66,0.45);}
+.img-frame{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9;background:linear-gradient(150deg,var(--purple-700),var(--purple-900));box-shadow:0 24px 48px -24px rgba(43,16,66,0.45);}
 .img-frame img{width:100%;height:100%;object-fit:cover;}
 .img-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#fff;text-align:center;padding:24px;}
 .img-fallback span{font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;opacity:.85;max-width:260px;}
-
-/* CARDS */
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:transform .45s var(--ease-smooth),box-shadow .45s var(--ease-smooth),border-color .3s ease;}
 .card:hover{transform:translateY(-8px);box-shadow:0 24px 40px -22px rgba(43,16,66,0.32);border-color:var(--violet-400);}
 .icon-tile{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:var(--mist-100);color:var(--purple-700);margin-bottom:16px;transition:background .45s var(--ease-smooth),color .45s var(--ease-smooth);}
@@ -551,8 +385,6 @@ display: none;
 .card p{font-size:14.5px;}
 .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:46px;}
 .choose-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px;}
-
-/* MISSION / VISION */
 .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
 .mv-card{background:var(--purple-900);color:#fff;border-radius:var(--radius);padding:42px 36px;position:relative;overflow:hidden;}
 .mv-card.alt{background:var(--purple-700);}
@@ -560,8 +392,6 @@ display: none;
 .mv-card .quote-mark{font-family:var(--font-display);font-size:54px;color:var(--gold-500);line-height:1;}
 .mv-card h3{color:#fff;margin:6px 0 14px;}
 .mv-card p{color:rgba(255,255,255,0.82);font-style:italic;font-size:16px;}
-
-/* SERVICES */
 .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:46px;}
 .service-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:transform .45s var(--ease-smooth),box-shadow .45s var(--ease-smooth);}
 .service-card:hover{transform:translateY(-7px);box-shadow:0 24px 40px -22px rgba(43,16,66,0.3);}
@@ -572,8 +402,6 @@ display: none;
 .feature-list .tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--gold-500);color:var(--purple-900);display:flex;align-items:center;justify-content:center;margin-top:2px;}
 .feature-list h4{font-family:var(--font-body);font-weight:600;font-size:15.5px;color:var(--purple-900);margin-bottom:3px;}
 .feature-list p{font-size:14px;margin:0;}
-
-/* HOW WE WORK */
 .timeline{position:relative;margin-top:54px;}
 .timeline::before{content:"";position:absolute;left:27px;top:6px;bottom:6px;width:2px;background:repeating-linear-gradient(to bottom,var(--gold-500) 0 8px,transparent 8px 16px);}
 .step{display:grid;grid-template-columns:56px 1fr;gap:22px;padding-bottom:42px;position:relative;}
@@ -583,8 +411,6 @@ display: none;
 .step p{font-size:15px;max-width:560px;}
 .promise-box{margin-top:56px;border-radius:var(--radius);padding:38px;background:linear-gradient(120deg,var(--mist-100),#fff);border:1px solid var(--line);text-align:center;}
 .promise-box p{font-style:italic;font-size:18px;color:var(--purple-900);max-width:680px;margin:0 auto;}
-
-/* CONTACT */
 .contact-section{background:var(--purple-900);color:#fff;}
 .contact-section .eyebrow{color:var(--gold-500);}
 .contact-section .eyebrow::before{background:var(--gold-500);}
@@ -600,41 +426,19 @@ display: none;
 .contact-cta{display:flex;flex-direction:column;justify-content:center;gap:18px;}
 .contact-cta .btn{justify-content:center;width:100%;}
 
-/* ===== FOOTER — REDESIGNED ===== */
-footer{
-  background:var(--ink-900);
-  color:#fff;
-  padding:0;
-  position:relative;
-  overflow:hidden;
-}
-/* Top gradient accent bar */
-.footer-accent{
-  height:3px;
-  background:linear-gradient(90deg,var(--purple-700),var(--violet-400),var(--gold-500),var(--violet-400),var(--purple-700));
-  background-size:300% 100%;
-  animation:shimmer 6s ease-in-out infinite;
-}
+/* ===== FOOTER ===== */
+footer{background:var(--ink-900);color:#fff;padding:0;position:relative;overflow:hidden;}
+.footer-accent{height:3px;background:linear-gradient(90deg,var(--purple-700),var(--violet-400),var(--gold-500),var(--violet-400),var(--purple-700));background-size:300% 100%;animation:shimmer 6s ease-in-out infinite;}
 @keyframes shimmer{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
-.footer-grid-bg{
-  position:absolute;inset:0;top:3px;
-  background-image:
-    linear-gradient(rgba(155,107,240,0.04) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(155,107,240,0.04) 1px,transparent 1px);
-  background-size:48px 48px;
-  pointer-events:none;
-}
+.footer-grid-bg{position:absolute;inset:0;top:3px;background-image:linear-gradient(rgba(155,107,240,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(155,107,240,0.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
 .footer-inner{max-width:var(--container);margin:0 auto;padding:0 28px;position:relative;z-index:1;}
-.footer-main{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1.2fr;
-  gap:56px;
-  padding:60px 0 48px;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-}
-/* Brand col */
+.footer-main{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:56px;padding:60px 0 48px;border-bottom:1px solid rgba(255,255,255,0.08);}
 .footer-brand .foot-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
-.footer-brand .foot-logo-badge{width:44px;height:44px;border-radius:13px;background:linear-gradient(145deg,var(--gold-500),#c97f1f);display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 6px 18px -6px rgba(232,162,61,0.45);}
+.footer-brand .foot-logo-badge{
+  width:44px;height:44px;
+  border-radius:13px;
+  background: #ffffff;
+  display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 6px 18px -6px rgba(232,162,61,0.45);}
 .footer-brand .foot-logo-badge img{width:30px;height:30px;object-fit:contain;}
 .footer-brand .foot-logo-text strong{display:block;font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff;letter-spacing:-0.01em;}
 .footer-brand .foot-logo-text small{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-500);}
@@ -643,25 +447,18 @@ footer{
 .foot-mantra-dot{width:5px;height:5px;border-radius:50%;background:var(--gold-500);}
 .foot-mantra span{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
 .foot-mantra strong{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-500);}
-/* Nav cols */
 .footer-col h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-500);margin-bottom:20px;}
 .footer-col a{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.48);font-size:14px;margin-bottom:12px;transition:color .3s,gap .3s;}
 .footer-col a:hover{color:#fff;gap:12px;}
 .footer-col a::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--violet-400);opacity:0;transition:opacity .3s;flex:none;}
 .footer-col a:hover::before{opacity:1;}
-/* Contact col */
 .footer-contact-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;}
 .footer-contact-icon{width:30px;height:30px;border-radius:8px;background:rgba(232,162,61,0.12);display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;}
 .footer-contact-icon svg{stroke:var(--gold-500);fill:none;}
 .footer-contact-item small{display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:2px;}
 .footer-contact-item span,.footer-contact-item a{font-size:13.5px;color:rgba(255,255,255,0.7);line-height:1.45;}
 .footer-contact-item a:hover{color:var(--gold-500);}
-/* Bottom bar */
-.footer-bottom{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:22px 0;
-  flex-wrap:wrap;gap:14px;
-}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:22px 0;flex-wrap:wrap;gap:14px;}
 .footer-bottom p{font-size:13px;color:rgba(255,255,255,0.28);}
 .footer-bottom p a{color:rgba(255,255,255,0.45);transition:color .3s;}
 .footer-bottom p a:hover{color:var(--gold-500);}
@@ -673,8 +470,8 @@ footer{
 .footer-product-badge{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.25);display:flex;align-items:center;gap:8px;}
 .footer-product-badge span{padding:3px 10px;border-radius:100px;background:rgba(155,107,240,0.15);border:1px solid rgba(155,107,240,0.2);color:var(--violet-400);}
 
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease-smooth),transform .8s var(--ease-smooth);}
+/* ===== REVEAL ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.85s var(--ease-smooth),transform 0.85s var(--ease-smooth);}
 .reveal.in{opacity:1;transform:translateY(0);}
 .reveal-stagger>*{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-smooth),transform .7s var(--ease-smooth);}
 .reveal-stagger.in>*{opacity:1;transform:translateY(0);}
@@ -683,7 +480,7 @@ footer{
 .reveal-stagger.in>*:nth-child(3){transition-delay:.22s;}
 .reveal-stagger.in>*:nth-child(4){transition-delay:.3s;}
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media(max-width:1080px){
   .footer-main{grid-template-columns:1fr 1fr;gap:40px;}
   .footer-brand{grid-column:1/-1;}
@@ -698,6 +495,8 @@ footer{
   .verticals-grid{grid-template-columns:1fr 1fr;}
   .hero-stats-bar{padding:20px 28px;}
   .hstat{padding:0 24px;}
+  /* About weave SVG: center on mobile, reduce max-width */
+  .about-weave-wrap{max-width:340px;}
 }
 @media(max-width:680px){
   .footer-main{grid-template-columns:1fr;gap:32px;}
@@ -714,11 +513,14 @@ footer{
   .hero-stats-bar{flex-direction:column;gap:16px;padding:20px;}
   .hstat+.hstat{border-left:none;border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;}
   .tw-we-craft{display:none;}
+  .about-weave-wrap{max-width:280px;}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;}
   .reveal,.reveal-stagger>*{opacity:1;transform:none;}
   .hero-pill,.hero-headline-block,.tw-block,.hero-ctas,.hero-stats-bar,.hero-scroll{opacity:1;transform:none;}
+  .weave-node-1,.weave-node-2,.weave-node-3,.weave-node-4,.weave-node-5{opacity:1;}
+  .weave-hub-ring{opacity:0.13;}
 }
 </style>
 </head>
@@ -747,73 +549,47 @@ footer{
   </div>
 </header>
 
-<!-- ===== HERO — Simplita-style animated particle ===== -->
+<!-- HERO -->
 <section class="hero" id="top">
-  <!-- Particle canvas -->
   <canvas id="heroCanvas"></canvas>
-
-  <!-- Atmospheric glows -->
   <div class="hero-spotlight"></div>
   <div class="hero-glow-bl"></div>
   <div class="hero-glow-br"></div>
-
-  <!-- Grid lines -->
   <div class="hero-grid-lines"></div>
-
-  <!-- Horizontal scan line -->
-
-  <!-- <div class="hero-scanline"></div> -->
-
   <div class="hero-inner">
-
-    <!-- Eyebrow pill -->
     <div class="hero-pill">
       <span class="hero-pill-dot"></span>
       <span>Step into our world. Build your legacy</span>
     </div>
-
-    <!-- Main headline — HUGE -->
     <div class="hero-headline-block">
       <h1>We Built the World.<br><span class="gold">You Rule It.</span></h1>
     </div>
-
-    <!-- Subtitle -->
     <p class="hero-subhead">Built Purple. Built Beyond. Intelligent Solutions for Every Business</p>
-
-    <!-- Typewriter — smaller, secondary -->
     <div class="tw-block">
       <span class="tw-we-craft">We craft →</span>
       <span class="tw-text" id="typewriter"></span>
     </div>
-
-    <!-- CTAs -->
     <div class="hero-ctas">
       <a href="#contact" class="btn-hero-primary">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
-        Get in Touch
+        Let's Build Together
       </a>
-      <a href="#purple-one" class="btn-hero-ghost">
-        Explore Purple One →
-      </a>
+      <a href="#purple-one" class="btn-hero-ghost">Explore the Purple World →</a>
     </div>
-
-    <!-- Stats bar -->
     <div class="hero-stats-bar">
- <div class="hstat"><strong>1</strong><span>App, 8+ Businesses</span></div>
-<div class="hstat"><strong>50+</strong><span>Features</span></div>
-<div class="hstat"><strong>40+</strong><span>Reports</span></div>
-<div class="hstat"><strong>Bank-Grade</strong><span>Secure & Encrypted</span></div>
-
-  </div>
-
-  <!-- Scroll chevron -->
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-chevron"></div>
+      <div class="hstat"><strong>1</strong><span>App, 8+ Businesses</span></div>
+      <div class="hstat"><strong>50+</strong><span>Features</span></div>
+      <div class="hstat"><strong>40+</strong><span>Reports</span></div>
+      <div class="hstat"><strong>Bank-Grade</strong><span>Secure &amp; Encrypted</span></div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-chevron"></div>
+    </div>
   </div>
 </section>
 
-<!-- ===== WHO WE ARE ===== -->
+<!-- WHO WE ARE -->
 <section class="about-section" id="about">
   <div class="wrap about-text-grid">
 
@@ -821,93 +597,180 @@ footer{
     <div class="about-left reveal">
       <span class="eyebrow">Who We Are</span>
       <h2>Technology partners,<br>not just developers</h2>
-     <p>Founded in 2023, Purple World Technology provides smart, reliable mobile and web solutions for small and medium-sized businesses across India. Our primary passion is digitally transforming everyday businesses through software that is simple, powerful, and built to last.</p>
-    
-    <p>We design our solutions — from billing and account management to customer relationship tools — with a focus on effortless usability. Whether you are tech-savvy or just getting started, our products are crafted to ensure that every user can operate them with complete confidence from day one.</p>
+      <p>Founded in 2023, Purple World Technology builds software for every kind of business. From small shops to large enterprises, across inventory management, complex resource planning, or custom CRM tools — we build whatever your business demands.</p>
+      <p>Need a ready-to-use product that works out of the box? We have it. Need a fully customized system engineered around your exact workflow? We build that too. Either way, your vision becomes real, reliable, and scalable software.</p>
+      <p class="brand-promise">At Purple World Technology, we don't just write code — we engineer the digital backbone of your business, ensuring you operate with complete confidence from day one.</p>
       <div class="about-values">
         <div class="av-card">
-          <div class="av-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h4>Secure by Design</h4><p>Production-ready solutions that prioritise data security and system performance.</p>
+          <div class="av-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h4>Rock-Solid Security</h4>
+          <p>Your data, protected at every layer. We ensure industrial-grade security.</p>
         </div>
         <div class="av-card">
-          <div class="av-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
-          <h4>Simple First</h4><p>Interfaces accessible to everyone, regardless of technical background.</p>
+          <div class="av-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+          <h4>Zero Training Needed</h4>
+          <p>Built for real people. Intuitive interfaces mastered in minutes.</p>
         </div>
         <div class="av-card">
-          <div class="av-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8"/></svg></div>
-          <h4>Tailored for You</h4><p>Every business is unique — we customise our software to fit your specific operations.</p>
+          <div class="av-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8"/></svg></div>
+          <h4>Made for Your Business</h4>
+          <p>Not a template — software shaped around your exact operations.</p>
         </div>
         <div class="av-card">
-          <div class="av-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <h4>Long-Term Partner</h4><p>We don't deliver and walk away — we stay with you for updates and growth.</p>
+          <div class="av-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4>We Don't Disappear</h4>
+          <p>Ongoing support and upgrades as you grow. We're in this for the long haul.</p>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT — animated weave network -->
-    <div class="about-weave-side reveal">
-      <div class="about-weave-wrap">
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path class="about-thread-edge" style="animation-delay:.5s;stroke:var(--violet-400)" d="M200 55 L337.9 155.2"/>
-          <path class="about-thread-edge" style="animation-delay:.56s;stroke:rgba(91,26,139,0.3)" d="M337.9 155.2 L285.3 317.3"/>
-          <path class="about-thread-edge" style="animation-delay:.62s;stroke:var(--gold-500)" d="M285.3 317.3 L114.7 317.3"/>
-          <path class="about-thread-edge" style="animation-delay:.68s;stroke:var(--violet-400)" d="M114.7 317.3 L62.1 155.2"/>
-          <path class="about-thread-edge" style="animation-delay:.74s;stroke:rgba(91,26,139,0.3)" d="M62.1 155.2 L200 55"/>
-          <path class="about-spoke" style="animation-delay:0s,.8s;stroke:var(--gold-500)" d="M200 200 L200 55"/>
-          <path class="about-spoke" style="animation-delay:.08s,.88s;stroke:var(--violet-400)" d="M200 200 L337.9 155.2"/>
-          <path class="about-spoke" style="animation-delay:.16s,.96s;stroke:rgba(91,26,139,0.4)" d="M200 200 L285.3 317.3"/>
-          <path class="about-spoke" style="animation-delay:.24s,1.04s;stroke:var(--gold-500)" d="M200 200 L114.7 317.3"/>
-          <path class="about-spoke" style="animation-delay:.32s,1.12s;stroke:var(--violet-400)" d="M200 200 L62.1 155.2"/>
-          <!-- Hub -->
-          <g transform="translate(200,200)">
-            <circle class="about-hub-glow" r="46" style="animation-delay:.05s,.85s"/>
-            <g class="module-chip" style="animation-delay:.1s,.7s">
-              <circle class="about-hub-circle" r="42"/>
-              <image href="images/pwtlogo.png" x="-28" y="-28" width="56" height="56" preserveAspectRatio="xMidYMid meet"/>
-            </g>
-          </g>
-          <!-- Billing -->
-          <g transform="translate(200,55)">
-            <g class="module-chip" style="animation-delay:.7s,1.3s"><circle class="about-chip-circle" r="34"/><g class="about-chip-icon" transform="scale(1.1) translate(-12,-12)"><rect x="5" y="1" width="14" height="22" rx="2"/><path d="M8.5 7h7M8.5 11.5h7M8.5 16h5"/></g></g>
-            <text class="about-chip-label" x="0" y="54" text-anchor="middle" style="animation-delay:.7s">Billing</text>
-          </g>
-          <!-- Customers -->
-          <g transform="translate(337.9,155.2)">
-            <g class="module-chip" style="animation-delay:.78s,1.38s"><circle class="about-chip-circle" r="34"/><g class="about-chip-icon" transform="scale(1.1) translate(-12,-12)"><path d="M4 21v-5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5"/><circle cx="8" cy="7" r="3"/><path d="M14 21v-3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/><circle cx="17" cy="9" r="2.4"/></g></g>
-            <text class="about-chip-label" x="0" y="54" text-anchor="middle" style="animation-delay:.78s">Customers</text>
-          </g>
-          <!-- Reports -->
-          <g transform="translate(285.3,317.3)">
-            <g class="module-chip" style="animation-delay:.86s,1.46s"><circle class="about-chip-circle" r="34"/><g transform="scale(1.1) translate(-12,-12)" stroke="none"><rect x="3" y="13" width="4" height="9" rx="0.6" style="fill:var(--purple-700)"/><rect x="10" y="7" width="4" height="15" rx="0.6" style="fill:var(--purple-700)"/><rect x="17" y="2" width="4" height="20" rx="0.6" style="fill:var(--purple-700)"/></g></g>
-            <text class="about-chip-label" x="0" y="54" text-anchor="middle" style="animation-delay:.86s">Reports</text>
-          </g>
-          <!-- Inventory -->
-          <g transform="translate(114.7,317.3)">
-            <g class="module-chip" style="animation-delay:.94s,1.54s"><circle class="about-chip-circle" r="34"/><g class="about-chip-icon" transform="scale(1.1) translate(-12,-12)"><path d="M12 2 L21 7 L12 12 L3 7 Z"/><path d="M3 7v10l9 5 9-5V7"/><path d="M12 12v10"/></g></g>
-            <text class="about-chip-label" x="0" y="54" text-anchor="middle" style="animation-delay:.94s">Inventory</text>
-          </g>
-          <!-- Automation -->
-          <g transform="translate(62.1,155.2)">
-            <g class="module-chip" style="animation-delay:1.02s,1.62s"><circle class="about-chip-circle" r="34"/><g class="about-chip-icon" transform="scale(1.1) translate(-12,-12)"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></g></g>
-            <text class="about-chip-label" x="0" y="54" text-anchor="middle" style="animation-delay:1.02s">Automation</text>
-          </g>
-        </svg>
-      </div>
-    </div>
+    <!-- RIGHT — Network SVG (replaces old orbit SVG) -->
+<style>
+  .orbit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    overflow: visible;
+  }
 
-  </div>
+  /* 1. மையத்தை சுற்றும் அமைப்பு (Main Orbit System) */
+  .orbit-system {
+    transform-origin: 200px 200px;
+    animation: spin 28s linear infinite;
+  }
+
+  /* 2. ஈர்ப்பு விசை (Gravity) அனிமேஷன் - தலைகீழாக மாறாமல் இருக்க (Counter-Rotation) */
+  .orbit-node {
+    animation: reverse-spin 28s linear infinite;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+
+  .orbit-node:hover {
+    filter: drop-shadow(0px 8px 16px rgba(91, 26, 139, 0.4));
+  }
+
+  .node-bg {
+    fill: #fff;
+    stroke: #5B1A8B;
+    stroke-width: 2;
+    transition: stroke 0.3s ease;
+  }
+
+  .orbit-node:hover .node-bg {
+    stroke: #E8A23D;
+  }
+
+  .node-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    font-weight: 600;
+    fill: #2B1042;
+    letter-spacing: 0.05em;
+  }
+
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes reverse-spin {
+    100% { transform: rotate(-360deg); }
+  }
+</style>
+
+<div class="orbit-container">
+  <svg viewBox="0 0 400 400" width="100%" style="max-width: 480px;" xmlns="http://www.w3.org/2000/svg">
+    
+    <!-- சுழலும் முழு அமைப்பு -->
+    <g class="orbit-system">
+      
+      <!-- ── மையத்திலிருந்து இணைக்கும் கோடுகள் (Connecting Lines) ── -->
+      <!-- To Solutions (Top) -->
+      <line x1="200" y1="200" x2="200" y2="55" stroke="#9B6BF0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+      <!-- To Integration (Top Right) -->
+      <line x1="200" y1="200" x2="338" y2="155" stroke="#9B6BF0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+      <!-- To Intelligence (Bottom Right) -->
+      <line x1="200" y1="200" x2="285" y2="317" stroke="#9B6BF0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+      <!-- To Strategy (Bottom Left) -->
+      <line x1="200" y1="200" x2="115" y2="317" stroke="#9B6BF0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+      <!-- To Engineering (Top Left) -->
+      <line x1="200" y1="200" x2="62" y2="155" stroke="#9B6BF0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+
+
+      <!-- ── 1. Solutions Node (200, 55) ── -->
+      <g class="orbit-node" style="transform-origin: 200px 55px;">
+        <circle cx="200" cy="55" r="32" class="node-bg"/>
+        <!-- App Grid SVG -->
+        <rect x="190" y="42" width="7" height="7" rx="1.5" fill="none" stroke="#5B1A8B" stroke-width="1.8"/>
+        <rect x="203" y="42" width="7" height="7" rx="1.5" fill="none" stroke="#5B1A8B" stroke-width="1.8"/>
+        <rect x="190" y="55" width="7" height="7" rx="1.5" fill="none" stroke="#5B1A8B" stroke-width="1.8"/>
+        <rect x="203" y="55" width="7" height="7" rx="1.5" fill="#E8A23D" stroke="#E8A23D" stroke-width="1.8"/>
+        <text x="200" y="105" text-anchor="middle" class="node-text">Solutions</text>
+      </g>
+
+      <!-- ── 2. Integration Node (338, 155) ── -->
+      <g class="orbit-node" style="transform-origin: 338px 155px;">
+        <circle cx="338" cy="155" r="32" class="node-bg"/>
+        <!-- Sync/Arrows SVG -->
+        <path d="M331 149a6 6 0 0 1 6-6h4m0 0l-2.5-2.5m2.5 2.5l-2.5 2.5" stroke="#5B1A8B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M345 161a6 6 0 0 1-6 6h-4m0 0l2.5 2.5m-2.5-2.5l2.5-2.5" stroke="#5B1A8B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="338" y="205" text-anchor="middle" class="node-text">Integration</text>
+      </g>
+
+      <!-- ── 3. Intelligence Node (285, 317) ── -->
+      <g class="orbit-node" style="transform-origin: 285px 317px;">
+        <circle cx="285" cy="317" r="32" class="node-bg"/>
+        <!-- Bar Chart SVG -->
+        <rect x="274" y="318" width="4" height="6" rx="1" fill="#5B1A8B"/>
+        <rect x="283" y="311" width="4" height="13" rx="1" fill="#5B1A8B"/>
+        <rect x="292" y="303" width="4" height="21" rx="1" fill="#E8A23D"/>
+        <path d="M272 328h26" stroke="#5B1A8B" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="285" y="367" text-anchor="middle" class="node-text">Intelligence</text>
+      </g>
+
+      <!-- ── 4. Strategy Node (115, 317) ── -->
+      <g class="orbit-node" style="transform-origin: 115px 317px;">
+        <circle cx="115" cy="317" r="32" class="node-bg"/>
+        <!-- Bullseye/Target SVG -->
+        <circle cx="115" cy="317" r="10" fill="none" stroke="#5B1A8B" stroke-width="1.8"/>
+        <circle cx="115" cy="317" r="4" fill="#E8A23D"/>
+        <line x1="115" y1="303" x2="115" y2="307" stroke="#5B1A8B" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="115" y1="327" x2="115" y2="331" stroke="#5B1A8B" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="101" y1="317" x2="105" y2="317" stroke="#5B1A8B" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="125" y1="317" x2="129" y2="317" stroke="#5B1A8B" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="115" y="367" text-anchor="middle" class="node-text">Strategy</text>
+      </g>
+
+      <!-- ── 5. Engineering Node (62, 155) ── -->
+      <g class="orbit-node" style="transform-origin: 62px 155px;">
+        <circle cx="62" cy="155" r="32" class="node-bg"/>
+        <!-- Gear SVG -->
+        <circle cx="62" cy="155" r="5" fill="none" stroke="#5B1A8B" stroke-width="1.8"/>
+        <path d="M62 146v2m0 14v2m-8-9h2m14 0h2m-12-6l1.5 1.5m10 10l1.5 1.5m0-13l-1.5 1.5m-10 10l-1.5 1.5" stroke="#5B1A8B" stroke-width="2" stroke-linecap="round"/>
+        <text x="62" y="205" text-anchor="middle" class="node-text">Engineering</text>
+      </g>
+
+    </g>
+
+    <!-- ── மைய லோகோ (Static Central Hub) ── -->
+    <!-- இது சுழலாது, எப்போதும் நேராகவே இருக்கும் -->
+    <g style="filter: drop-shadow(0px 6px 12px rgba(43, 16, 66, 0.2));">
+      <circle cx="200" cy="200" r="48" fill="#fff" stroke="#E8A23D" stroke-width="2.5"/>
+      <circle cx="200" cy="200" r="56" fill="none" stroke="#9B6BF0" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+      <image href="images/pwtlogo.png" x="165" y="165" width="70" height="70" preserveAspectRatio="xMidYMid meet" />
+    </g>
+
+  </svg>
+</div>
 </section>
-
 <div class="thread-divider"></div>
 
-<!-- ===== PURPLE ONE — PRODUCT SECTION ===== -->
+<!-- PURPLE ONE -->
 <section class="product-section" id="purple-one">
   <div class="wrap product-grid">
-
-    <!-- LEFT — Realistic mobile mockup -->
     <div class="mobile-mockup-wrap reveal">
-
-      <!-- Floating badges -->
       <div class="mob-float mob-float-1">
         <div class="mob-float-icon" style="background:rgba(34,197,94,0.12);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
@@ -926,16 +789,9 @@ footer{
         </div>
         <div class="mob-float-body"><strong>98% Uptime</strong><span>Always live</span></div>
       </div>
-
       <div class="mobile-frame">
-        <!-- Notch -->
-        <div class="mobile-notch">
-          <div class="notch-mic"></div>
-          <div class="notch-cam"></div>
-        </div>
-
+        <div class="mobile-notch"><div class="notch-mic"></div><div class="notch-cam"></div></div>
         <div class="mobile-screen">
-          <!-- Status bar -->
           <div class="mob-status">
             <span class="mob-status-time">9:41</span>
             <div class="mob-status-icons">
@@ -944,42 +800,25 @@ footer{
               <svg width="15" height="12" viewBox="0 0 24 12" stroke-width="2"><rect x="1" y="1" width="18" height="10" rx="2"/><path d="M23 4v4a2 2 0 0 0 0-4z"/><rect x="3" y="3" width="13" height="6" rx="1" fill="currentColor" stroke="none"/></svg>
             </div>
           </div>
-
-          <!-- App header -->
           <div class="mob-header">
-            <div class="mob-header-left">
-              <strong>Purple One</strong>
-              <small>Business Dashboard</small>
-            </div>
+            <div class="mob-header-left"><strong>Purple One</strong><small>Business Dashboard</small></div>
             <div class="mob-avatar">SK</div>
           </div>
-
-          <!-- Greeting -->
           <div class="mob-greeting">
-            <div class="mob-greeting-text">
-              <strong>Good Morning, Sathish 👋</strong>
-              <small>Today's Overview</small>
-            </div>
+            <div class="mob-greeting-text"><strong>Good Morning, Sathish 👋</strong><small>Today's Overview</small></div>
             <div class="mob-notif">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
               <div class="mob-notif-dot"></div>
             </div>
           </div>
-
           <div class="mob-body">
-            <!-- Stats -->
             <div class="mob-stats">
               <div class="mob-stat"><strong>₹2.4L</strong><small>Sales</small></div>
               <div class="mob-stat"><strong>138</strong><small>Bills</small></div>
               <div class="mob-stat"><strong>47</strong><small>Customers</small></div>
             </div>
-
-            <!-- Mini chart -->
             <div class="mob-chart">
-              <div class="mob-chart-head">
-                <span>Weekly Sales</span>
-                <strong>↑ 12%</strong>
-              </div>
+              <div class="mob-chart-head"><span>Weekly Sales</span><strong>↑ 12%</strong></div>
               <div class="mob-bars">
                 <div class="mob-bar" style="height:40%"></div>
                 <div class="mob-bar" style="height:58%"></div>
@@ -990,8 +829,6 @@ footer{
                 <div class="mob-bar" style="height:68%"></div>
               </div>
             </div>
-
-            <!-- Module list -->
             <div class="mob-section-label">Modules</div>
             <div class="mob-list">
               <div class="mob-item">
@@ -1011,8 +848,6 @@ footer{
               </div>
             </div>
           </div>
-
-          <!-- Bottom nav -->
           <div class="mob-bottom-nav">
             <div class="mob-nav-item active">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
@@ -1035,82 +870,40 @@ footer{
       </div>
     </div>
 
-    <!-- RIGHT — Purple One details -->
     <div class="product-right reveal">
       <span class="eyebrow">Our Flagship Product</span>
-      <h2>Purple One — All-in-One ERP & Billing App</h2>
+      <h2>Purple One — All-in-One ERP &amp; Billing App</h2>
       <p class="product-tagline">One app. Every business type. Built for Tamil Nadu MSMEs.</p>
-
       <div class="product-badges">
         <span class="p-badge">Android App</span>
         <span class="p-badge">Offline First</span>
-        <span class="p-badge">Tamil Support</span>
+        <span class="p-badge">Multi-Language Support</span>
         <span class="p-badge">Thermal Print</span>
         <span class="p-badge">GST Ready</span>
-        <span class="p-badge">WhatsApp Bills</span>
+        <span class="p-badge">User-Friendly</span>
       </div>
-
-      <!-- 8 verticals grid -->
       <div class="verticals-grid">
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
-          <div><h4>Retail Shop</h4><p>Billing, stock, POS</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-          <div><h4>Wholesale</h4><p>Bulk orders, parties</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
-          <div><h4>Restaurant</h4><p>KOT, tables, menu</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div>
-          <div><h4>Photography</h4><p>Bookings, albums</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-          <div><h4>Veg Mandi</h4><p>Daily rates, weight</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8"/></svg></div>
-          <div><h4>Mobile Service Center</h4><p>job card, status, updates</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
-          <div><h4>Fish Shop</h4><p>Weight, daily catch</p></div>
-        </div>
-        <div class="vcard">
-          <div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
-          <div><h4>General MSME</h4><p>Any business type</p></div>
-        </div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div><h4>Retail Shop</h4><p>Billing, stock, POS</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><div><h4>Wholesale</h4><p>Bulk orders, parties</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><div><h4>Restaurant</h4><p>KOT, tables, menu</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div><div><h4>Photography</h4><p>Bookings, albums</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div><h4>Veg Mandi</h4><p>Daily rates, weight</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8"/></svg></div><div><h4>Mobile Service Center</h4><p>Job card, status, updates</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div><h4>Fish Shop</h4><p>Weight, daily catch</p></div></div>
+        <div class="vcard"><div class="vcard-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div><div><h4>General MSME</h4><p>Any business type</p></div></div>
       </div>
-
-      <!-- Key features list -->
       <div class="product-features">
-        <div class="pf-row">
-          <div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div>
-          <div><h4>Offline-First with Auto Sync</h4><p>Works without internet — data syncs when connection returns via RoomDB + FastAPI backend.</p></div>
-        </div>
-        <div class="pf-row">
-          <div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div>
-          <div><h4>Thermal Print + WhatsApp Bills</h4><p>One-tap printing on any Bluetooth thermal printer. Share invoices instantly via WhatsApp.</p></div>
-        </div>
-        <div class="pf-row">
-          <div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div>
-          <div><h4>40+ Reports in Tamil & English & Hindi</h4><p>Manage your entire business—from sales and stock to staff and finance—effortlessly with a single tap.</p></div>
-        </div>
+        <div class="pf-row"><div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div><div><h4>Offline-First with Auto Sync</h4><p>Works without internet — data syncs when connection returns via RoomDB + FastAPI backend.</p></div></div>
+        <div class="pf-row"><div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div><div><h4>Thermal Print + WhatsApp Bills</h4><p>One-tap printing on any Bluetooth thermal printer. Share invoices instantly via WhatsApp.</p></div></div>
+        <div class="pf-row"><div class="pf-tick"><svg width="11" height="11" viewBox="0 0 24 24" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div><div><h4>40+ Insightful Business Reports</h4><p>Manage your entire business — from sales and stock to staff and finance — effortlessly with over 40+ powerful, ready-to-use reports, all accessible with a single tap.</p></div></div>
       </div>
-
       <div class="product-ctas">
         <a href="#contact" class="btn btn-solid">Request a Demo</a>
         <a href="#contact" class="btn btn-outline">Learn More →</a>
       </div>
     </div>
-
   </div>
 </section>
-
 <div class="thread-divider"></div>
 
 <!-- MISSION & VISION -->
@@ -1118,7 +911,7 @@ footer{
   <div class="wrap">
     <div class="section-head reveal"><span class="eyebrow">Mission &amp; Vision</span><h2>What drives the work</h2></div>
     <div class="mv-grid reveal-stagger">
-      <div class="mv-card"><span class="quote-mark">"</span><h3>Our Mission</h3><p>To create simple and elegant software solutions that even users with limited technical knowledge can use without barriers — simplifying the complex challenges small and medium businesses face through accurate, secure, modern technology.</p></div>
+      <div class="mv-card"><span class="quote-mark">"</span><h3>Our Mission</h3><p>To build powerful software with simple, effortless experience — accessible to anyone, regardless of technical background — solving the real challenges small and medium businesses face with accurate, secure, and modern technology.</p></div>
       <div class="mv-card alt"><span class="quote-mark">"</span><h3>Our Vision</h3><p>Believing technology belongs to everyone, our long-term vision is to create world-class yet simple software products and reach a new milestone in the business management industry.</p></div>
     </div>
   </div>
@@ -1141,8 +934,8 @@ footer{
 <section class="section section-alt">
   <div class="wrap partner-grid">
     <div class="reveal img-frame">
-      <img src="images/work-in-progress.jpg" alt="Purple World Technology software in action" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="img-fallback" style="display:none;"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span>Add a photo — images/work-in-progress.jpg</span></div>
+      <img src="images/work-in-progress.webp" alt="Purple World Technology software in action" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-fallback" style="display:none;"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span>Add a photo — images/work-in-progress.webp</span></div>
     </div>
     <div class="reveal">
       <span class="eyebrow">Why Partner With Us</span>
@@ -1163,8 +956,8 @@ footer{
     <div class="section-head reveal"><span class="eyebrow">How We Work</span><h2>A simple, transparent process from start to finish</h2></div>
     <div class="timeline reveal">
       <div class="step"><div class="step-num">01</div><div><h3>Consultation</h3><p>We take time to deeply understand your business needs and goals before writing a single line of code.</p></div></div>
-      <div class="step"><div class="step-num">02</div><div><h3>Design &amp; Development</h3><p>We design and build simple, polished solutions tailored to your business.</p></div></div>
-      <div class="step"><div class="step-num">03</div><div><h3>Testing &amp; Deployment</h3><p>We thoroughly test and deliver error-free, secure software, ready for daily use.</p></div></div>
+      <div class="step"><div class="step-num">02</div><div><h3>Design &amp; Development</h3><p>We design and build software that's polished, functional, and built specifically around your workflow.</p></div></div>
+      <div class="step"><div class="step-num">03</div><div><h3>Testing &amp; Deployment</h3><p>We rigorously test every feature to deliver secure, reliable software, ready for daily use.</p></div></div>
       <div class="step"><div class="step-num">04</div><div><h3>Ongoing Support</h3><p>We provide continued technical support and updates to fuel your business growth.</p></div></div>
     </div>
     <div class="promise-box reveal"><p>"We are not just software developers — we are technology partners invested in your success. We will stand by you at every step of your business journey."</p></div>
@@ -1177,8 +970,8 @@ footer{
     <div class="section-head reveal"><span class="eyebrow">Get in Touch</span><h2>Let's build something simple together</h2><p>Tell us about your business and we'll get back to you — usually the same day.</p></div>
     <div class="contact-grid">
       <div class="contact-card reveal">
-        <div class="contact-row"><div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Address</small><span class="value">Nagar, Chetti Palayam, Tirupur 641603, Tamil Nadu</span></div></div>
-        <div class="contact-row"><div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><div><small>Phone</small><a href="tel:+919942740469">+91 99427404769</a></div></div>
+        <div class="contact-row"><div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Address</small><span class="value">Tirupur, Tamil Nadu-641603</span></div></div>
+        <div class="contact-row"><div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><div><small>Phone</small><a href="tel:+919942740469">+91 99427 40469</a></div></div>
         <div class="contact-row"><div class="icon-tile" style="background:rgba(232,162,61,0.18);color:var(--gold-500);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div><div><small>Email</small><a href="mailto:support@purpleworldtechnology.com">support@purpleworldtechnology.com</a></div></div>
       </div>
       <div class="contact-cta reveal">
@@ -1190,34 +983,20 @@ footer{
   </div>
 </section>
 
-<!-- ===== FOOTER — REDESIGNED ===== -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-accent"></div>
   <div class="footer-grid-bg"></div>
   <div class="footer-inner">
-
     <div class="footer-main">
-
-      <!-- Brand column -->
       <div class="footer-brand">
         <div class="foot-logo">
-          <div class="foot-logo-badge">
-            <img src="images/pwtlogo.png" alt="PWT Logo">
-          </div>
-          <div class="foot-logo-text">
-            <strong>Purple World</strong>
-            <small>Technology</small>
-          </div>
+          <div class="foot-logo-badge"><img src="images/pwtlogo.png" alt="PWT Logo"></div>
+          <div class="foot-logo-text"><strong>Purple World</strong><small>Technology</small></div>
         </div>
-        <p>Simple, secure mobile and web software for small and medium businesses across Tamil Nadu — billing, ERP, and process automation that just works.</p>
-        <div class="foot-mantra">
-          <div class="foot-mantra-dot"></div>
-          <strong>Build. Optimize. Scale.</strong>
-          <span>— PWT</span>
-        </div>
+        <p>We build secure mobile and web software for businesses of every kind. From custom solutions to intelligent automation, we design technology tailored to your real business needs. Our goal is simple — to provide technology that just works, every single time.</p>
+        <div class="foot-mantra"><div class="foot-mantra-dot"></div><strong>Build. Optimize. Scale.</strong><span>— PWT</span></div>
       </div>
-
-      <!-- Quick links -->
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="#about">About Us</a>
@@ -1226,8 +1005,6 @@ footer{
         <a href="#how-we-work">How We Work</a>
         <a href="#contact">Contact</a>
       </div>
-
-      <!-- Product -->
       <div class="footer-col">
         <h4>Product</h4>
         <a href="#purple-one">Purple One ERP</a>
@@ -1236,58 +1013,44 @@ footer{
         <a href="#purple-one">Restaurant POS</a>
         <a href="#purple-one">Mandi Management</a>
       </div>
-
-      <!-- Contact -->
       <div class="footer-col">
         <h4>Reach Us</h4>
         <div class="footer-contact-item">
-          <div class="footer-contact-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
-          </div>
-          <div><small>Phone</small><a href="tel:+9199427404769">+91 99427404769</a></div>
+          <div class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><small>Phone</small><a href="tel:+919942740469">+91 99427404769</a></div>
         </div>
         <div class="footer-contact-item">
-          <div class="footer-contact-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
-          </div>
+          <div class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
           <div><small>Email</small><a href="mailto:support@purpleworldtechnology.com">support@purpleworldtechnology.com</a></div>
         </div>
         <div class="footer-contact-item">
-          <div class="footer-contact-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
+          <div class="footer-contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div><small>Address</small><span>Tirupur, Tamil Nadu 641603</span></div>
         </div>
       </div>
-
     </div>
-
-    <!-- Bottom bar -->
     <div class="footer-bottom">
       <p>&copy; <span id="year"></span> Purple World Technology. All rights reserved. · <a href="#top">Back to top ↑</a></p>
-      <div class="footer-product-badge">
-        Powering <span>Purple One</span>
-      </div>
+      <div class="footer-product-badge">Powering <span>Purple One</span></div>
       <div class="footer-socials">
-        <!-- WhatsApp -->
         <a href="https://wa.me/919942740469" target="_blank" rel="noopener" class="foot-social" aria-label="WhatsApp">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.7 14.2c-.2.6-1.4 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1.1-2.5.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.4.2.5.7 1.7.7 1.8.1.2.1.4 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.4.4-.2.7.3.5 1 1.3 1.7 1.9.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg>
         </a>
-        <!-- LinkedIn -->
         <a href="#" class="foot-social" aria-label="LinkedIn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <!-- Instagram -->
-        <a href="#" class="foot-social" aria-label="Instagram">
+        <a href="https://www.instagram.com/purple_world_technology" class="foot-social" aria-label="Instagram">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <!-- Mail -->
-        <a href="mailto:support@purpleworldtechnology.com" class="foot-social" aria-label="Email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
-        </a>
+       <!-- மின்னஞ்சல் அனுப்புவதற்கு இதுதான் சரியான முறை -->
+<a href="mailto:support@purpleworldtechnology.com" class="foot-social" aria-label="Email">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+    <path d="M22 6l-10 7L2 6"/>
+  </svg>
+</a>
       </div>
     </div>
-
   </div>
 </footer>
 
@@ -1310,38 +1073,20 @@ mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', false);
 }));
 
-// Scroll reveal
+// ===== SCROLL REVEAL =====
 const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => io.observe(el));
 } else {
   revealEls.forEach(el => el.classList.add('in'));
-}
-
-// Stat counters
-const counters = document.querySelectorAll('[data-count]');
-if ('IntersectionObserver' in window) {
-  const cio = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target; cio.unobserve(el);
-      if (el.dataset.noAnim) return;
-      const target = parseInt(el.dataset.count, 10);
-      const suffix = el.dataset.suffix || '';
-      const start = performance.now();
-      function tick(now) {
-        const p = Math.min((now - start) / 1200, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(eased * target) + suffix;
-        if (p < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(el => cio.observe(el));
 }
 
 // Active nav
@@ -1371,7 +1116,6 @@ if ('IntersectionObserver' in window) {
   resize();
   window.addEventListener('resize', resize, {passive:true});
 
-  // Track mouse for subtle repulsion
   canvas.parentElement.addEventListener('mousemove', e=>{
     const r = canvas.getBoundingClientRect();
     mouse.x = e.clientX - r.left;
@@ -1379,17 +1123,13 @@ if ('IntersectionObserver' in window) {
   }, {passive:true});
   canvas.parentElement.addEventListener('mouseleave', ()=>{mouse.x=null;mouse.y=null;});
 
-  // Particle
-  function Particle(){
-    this.reset();
-  }
+  function Particle(){ this.reset(); }
   Particle.prototype.reset = function(){
     this.x = Math.random()*W;
     this.y = Math.random()*H;
     this.r = Math.random()*1.4 + 0.3;
     this.vx = (Math.random()-.5)*.38;
     this.vy = (Math.random()-.5)*.38;
-    // gold or violet
     this.isGold = Math.random() < 0.18;
     this.alpha = Math.random()*0.5 + 0.15;
     this.pulse = Math.random()*Math.PI*2;
@@ -1397,44 +1137,29 @@ if ('IntersectionObserver' in window) {
   };
 
   for(let i=0;i<COUNT;i++) particles.push(new Particle());
-
   const LINK_DIST = 180;
 
   function draw(){
     ctx.clearRect(0,0,W,H);
-
-    // Update + draw particles
     for(let p of particles){
       p.pulse += p.pulseSpeed;
       const a = p.alpha * (0.7 + 0.3*Math.sin(p.pulse));
-
-      // Mouse repulsion
       if(mouse.x !== null){
         const dx = p.x - mouse.x, dy = p.y - mouse.y;
         const d = Math.sqrt(dx*dx+dy*dy);
-        if(d < 100){
-          p.vx += dx/d * 0.12;
-          p.vy += dy/d * 0.12;
-        }
+        if(d < 100){ p.vx += dx/d * 0.12; p.vy += dy/d * 0.12; }
       }
-      // Dampen velocity
       p.vx *= 0.99; p.vy *= 0.99;
-
       p.x += p.vx; p.y += p.vy;
       if(p.x < -10) p.x = W+10;
       if(p.x > W+10) p.x = -10;
       if(p.y < -10) p.y = H+10;
       if(p.y > H+10) p.y = -10;
-
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = p.isGold
-        ? `rgba(232,162,61,${a})`
-        : `rgba(155,107,240,${a})`;
+      ctx.fillStyle = p.isGold ? `rgba(232,162,61,${a})` : `rgba(155,107,240,${a})`;
       ctx.fill();
     }
-
-    // Draw links
     for(let i=0;i<particles.length;i++){
       for(let j=i+1;j<particles.length;j++){
         const a=particles[i], b=particles[j];
@@ -1481,21 +1206,12 @@ if ('IntersectionObserver' in window) {
     if (!deleting) {
       el.textContent = word.substring(0, charIndex + 1);
       charIndex++;
-      if (charIndex === word.length) {
-        deleting = true;
-        setTimeout(tick, 2000);
-        return;
-      }
+      if (charIndex === word.length) { deleting = true; setTimeout(tick, 2000); return; }
       setTimeout(tick, 72);
     } else {
       el.textContent = word.substring(0, charIndex - 1);
       charIndex--;
-      if (charIndex === 0) {
-        deleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(tick, 380);
-        return;
-      }
+      if (charIndex === 0) { deleting = false; wordIndex = (wordIndex + 1) % words.length; setTimeout(tick, 380); return; }
       setTimeout(tick, 34);
     }
   }
